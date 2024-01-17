@@ -1,43 +1,42 @@
 body {
     display: grid;
-    
-    
     width: 80%;
     margin: auto;
 }
 
 header {
     background: #13505B;
-    color: antiquewhite;
+    color: white;
     font-family: 'Merriweather', serif;
     padding: 2rem;
     text-align: center;
 }
 nav {
-    background: #0C7489;
-    color: antiquewhite;
+    background: #3A0842;
+    color: white;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     padding: 1rem;
     text-align: center;    
 }
-a {
+nav a {
     margin-top: 3px;
     margin-bottom: 3px;
 }
-a:link {
-    color: antiquewhite;
+nav a:link {
+    color: white;
     text-decoration: none;
 }
-a:visited {
-    color: black;
+nav a:visited {
+    color: white;
     text-decoration: none;
 }
-a:hover{
+nav a:hover{
     color: #119DA4;
     text-decoration: none;
     background-color: #D7D9CE;
 }
-a:active{
+nav a:active{
     color: #000;
     text-decoration: none;
 }
@@ -62,6 +61,22 @@ ul {
     list-style-type: none;
     text-align: left;
 }
+ul a {
+    color: #000;
+}
+ul a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #13505B;
+}
+ul a:active{
+    color: white;
+    text-decoration: none;
+    background-color: #13505B;
+}
+ul a:visited {
+    color: #000
+}
 .card {
     border-style: solid;
     border-radius: 5px;
@@ -71,7 +86,7 @@ ul {
 }
 footer {
     background: #13505B;
-    color: antiquewhite;
+    color: white;
     font-family: 'Merriweather', serif;
     padding: 1rem;
     text-align: center; 
