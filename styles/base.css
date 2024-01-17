@@ -63,19 +63,21 @@ ul {
 }
 ul a {
     color: #000;
+    text-decoration: none;
 }
 ul a:hover {
     color: white;
     text-decoration: none;
-    background-color: #13505B;
+    background-color: #119DA4;
 }
-ul a:active{
+ul a:active {
     color: white;
     text-decoration: none;
-    background-color: #13505B;
+    background-color: #119DA4;
 }
 ul a:visited {
-    color: #000
+    color: #000;
+    text-decoration: none;
 }
 .card {
     border-style: solid;

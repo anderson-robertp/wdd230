@@ -9,9 +9,9 @@ footer {
 	margin: 0 auto;
 }
 
-marquee {
-	padding: 1rem;
-	background-color: #eee;
+.banner{
+    background-color: #A7A2A9;
+    text-align: center;
 }
 
 h1 {
