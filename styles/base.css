@@ -10,28 +10,40 @@ header {
     font-family: 'Merriweather', serif;
     padding: 2rem;
     text-align: center;
+    font-size: larger;
 }
 nav {
     background: #3A0842;
+    
+       
+}
+nav a{
+    display: block;
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     padding: 1rem;
-    text-align: center;    
+    text-align: center; 
 }
-nav a {
+nav ul a {
     margin-top: 3px;
     margin-bottom: 3px;
+    display: block;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    padding: 1rem;
+    text-align: center;
 }
-nav a:link {
+nav ul a:link {
     color: white;
     text-decoration: none;
 }
-nav a:visited {
+nav ul a:visited {
     color: white;
     text-decoration: none;
 }
-nav a:hover{
+nav ul a:hover{
     color: #119DA4;
     text-decoration: none;
     background-color: #D7D9CE;
@@ -47,7 +59,7 @@ main {
     padding: 1rem;
     text-align: center;
     
-    grid-template-columns: auto; 
+     
 }
 h2 {
     border-bottom-style: solid;
@@ -79,12 +91,19 @@ ul a:visited {
     color: #000;
     text-decoration: none;
 }
-.card {
+.lessoncard {
     border-style: solid;
     border-radius: 5px;
     padding: 1rem;
-    margin: auto;
-    width: 75%;
+    
+    
+}
+.infocard{
+    border-style: solid;
+    border-radius: 5px;
+    padding: 1rem;
+    
+    
 }
 footer {
     background: #13505B;
