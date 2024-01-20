@@ -20,6 +20,16 @@ main {
 h3{
     background-color: #3A0842;
     color: white;
+    padding: 1rem;
+    margin: auto;
+}
+h4{
+    padding: 1rem;
+    font-size: large;
+}
+.link {
+    padding: auto;
+    margin: 1rem;
 }
 #design1 {
     border-style: solid;

@@ -10,7 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" href="images/favicon.ico">
     <title>Robert Anderson - WDD 230 - Design Principles</title>
 </head>
 <body>
@@ -22,8 +24,12 @@
         <div id="design1">
             <h3>Fitt's Law</h3>
             <h4>Raising Cane's</h4>
-            <a href="https://www.raisingcanes.com/home">RaisingCanes.com</a>
-            <img src="images/canes.png">
+            <div>
+                <a href="https://www.raisingcanes.com/home">RaisingCanes.com</a>
+            </div>
+            <div class="link">
+                <img src="images/canes.png">
+            </div>          
             <p>Fitts’s law is a predictive model for the speed of human movement, commonly used in human-computer interaction.
                  It states that the time it takes someone to select an object depends on how far they are from the object and 
                  the size of the object. Small objects that are far from your starting position or related objects that are far 
@@ -40,8 +46,10 @@
         <div id="design2">
             <h3>Visual Hierarchy</h3>
             <h4>Amazon</h4>
-            <a href="www.amazon.com">Amazon.com</a>
-            <img src="images/amazon.png">
+            <div class="link"><a href="www.amazon.com">Amazon.com</a></div>
+            <div>
+                <img src="images/amazon.png">
+            </div>
             <p>
                 Visual hierarchy is the principle of arranging elements to show their order of importance. 
                 Designers structure visual characteristics—e.g., menu icons—so users can understand information easily. 
@@ -57,8 +65,10 @@
         <div id="design3">
             <h3>Hick's Law</h3>
             <h4>Google</h4>
-            <a href="google.com">Google.com</a>
-            <img src="images/google.png" width="296px" height="640px">
+            <div class="link"><a href="google.com">Google.com</a></div>            
+            <div>
+                <img src="images/google.png" width="296px" height="640px">
+            </div>
             <p>Hick's Law states that the time it takes to make a decision 
                 increases with the number and complexity of choices presented. (see <a href="https://lawsofux.com/hicks-law/">LawsofUX.com</a>)<br>
                 The main web page for Google is a prime example of Hick's law. The page is very simplistic and offers very few choices.
