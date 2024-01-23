@@ -1,0 +1,26 @@
+header {
+    background: #13505B;
+    color: white;
+    font-family: 'Merriweather', serif;
+    padding: 2rem;
+    text-align: center;
+    font-size: larger;
+}
+main {
+    background: #D7D9CE;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 5px;
+    
+}
+footer {
+    background: #13505B;
+    color: white;
+    font-family: 'Merriweather', serif;
+    padding: 1rem;
+    text-align: center; 
+}
