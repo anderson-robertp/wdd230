@@ -43,6 +43,10 @@ h4{
     border-style: solid;
     border-radius: 5px;
 }
+img {
+    width: 296px; 
+    height: 640px
+}
 footer {
     background: #13505B;
     color: white;
