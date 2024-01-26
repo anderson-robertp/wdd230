@@ -57,7 +57,7 @@ body header img {
 	display: block;
 }
 .active::before {
-	content: "📍";  /* just a wayfinding symbol for the user */
+	content: "🎲";  /* just a wayfinding symbol for the user */
 }
 /*nav a{
     display: block;
@@ -109,7 +109,8 @@ h2 {
 }
 h3 {
     background: #119DA4;
-    padding: 1rem; 
+    padding: 1rem;
+    margin: auto;
 }
 ul {
     list-style-type: none;
