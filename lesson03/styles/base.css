@@ -7,20 +7,28 @@ body {
 header {
     background: white;
     color: #1B264F;
-    font-family: 'Merriweather', serif;
+    font-family: 'Mulish', sans-serif;
     padding: 2rem;
     text-align: center;
     font-size: larger;
+    display: flex;
 }
-
+#head {
+    position: relative;
+    
+}
+#title {
+    position: relative;
+    top: 75px;
+    left: 50px;
+}
 #menu {
 	font-size: 1.5rem;
 	border: 1px solid rgba(0,0,0,.3);
 	padding: 3px 7px 6px;
 	background-color: #eee;
 	color: #000;
-    
-
+    position: sticky;
 }
 
 #menu::before {
@@ -37,6 +45,7 @@ header {
 	list-style: none;
 	background-color: #274690;
 	color: #fff;
+    
 }
 .navigation a {
 	display: none;
@@ -59,7 +68,7 @@ header {
 main {
     background: white;
     color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Mulish', sans-serif;
     padding: 1rem;
     text-align: center;
     row-gap: 3px;
@@ -77,6 +86,7 @@ h3 {
 h4 {
     border-style: solid;
     border-radius: 5px;
+    border-color: #000;
 }
 #space {
     background-color: #1B264F;
@@ -105,7 +115,7 @@ iframe{
 footer {
     background: #1B264F;
     color: white;
-    font-family: 'Merriweather', serif;
+    font-family: 'Mulish', sans-serif;
     padding: 1rem;
     text-align: center; 
 }

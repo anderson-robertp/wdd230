@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta 
     name="description" 
-    content="Here is the course assignment portal for Robert Anderson to
-    display his work for the WDD 230 - Web Frontend Development class.">
+    content="The site plan for the chamber fo commerce project.">
     <meta name="author" content="Robert Anderson">
     <!-- Social Meta Expressions -->
-    <meta property="og:title" content="WDD 230 - Web Frontend Development">
+    <meta property="og:title" content="Franklin Parish Chamber of Commerce - 230 - Web Frontend Development">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://heartoflouisiana.com/wp-content/uploads/2021/12/Lake_Bistineau_Cypress_Moss_09_1700x1130-1-1700x660.jpg">
-    <meta property="og:url" content="https://anderson-robertp.github.io/wdd230/">
+    <meta property="og:url" content="https://anderson-robertp.github.io/wdd230/lesson03/chamber-site-plan.html">
     <!-- Fonts and styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -26,7 +26,7 @@
 </head>
 <body>
     <header>
-        <div id="head"><img src="images/just_icon.png" alt="franklin chamber logo"></div>
+        <div id="head"><img src="images/just_icon_50.png" alt="franklin chamber logo"></div>
         <div id="title">
             <h1>Franklin Parish</h1>
             <h2>Chamber of Commerce</h2>
@@ -42,11 +42,11 @@
     </nav>
     <main>
         <section>
-            <h2>Site Name</h2>
+            <h3>Site Name</h3>
             <p>Franklin Parish Chamber of Commerce</p>
         </section>
         <section>
-            <h2>Site Purpose</h2>
+            <h3>Site Purpose</h3>
             <p>The Franklin Parish Chamber of Commerce website serves as a dynamic online hub dedicated to fostering economic growth,
                  collaboration, and community vitality. Our purpose is to connect businesses, residents, and visitors, providing a 
                  centralized platform for information, resources, and networking opportunities. Through this digital presence, we 
@@ -54,41 +54,57 @@
                  to the prosperity and well-being of Franklin Parish. </p>
         </section>
         <section>
-            <h2>Scenarios</h2>
+            <h3>Scenarios</h3>
             <p>1: Where should I go to network with other business owners?<br>
                 2: Who do I contact if I have any questions about owning and operating a business? <br>
                 3: What resources are available to me as a resident, a business owener, or as a visitor?
             </p>
         </section>
         <section>
-            <h2>Color Schema</h2>
+            <h3>Color Schema</h3>
             <div><a href="https://coolors.co/1b264f-274690-07beb8-fb3640-ffffff">Link to Coolers</a></div>
             <div id="colors">
-                <h4 id="space">Space Cadet</h4>
-                <h4 id="blue">Marian Blue</h4>
-                <h4 id="green">Light Sea Green</h4>
-                <h4 id="red">Imperial Red</h4>
-                <h4 id="white">White</h4>
+                <div id="space">
+                    <h4 >Space Cadet</h4>
+                    <p>Footer</p>
+                </div>
+                <div id="blue">
+                    <h4>Marian Blue</h4>
+                    <p>Navigation</p>
+                </div>
+                <div id="green">
+                    <h4>Light Sea Green</h4>
+                    <p>Headers</p>
+                </div>
+                <div id="red">
+                    <h4>Imperial Red</h4>
+                    <p>Accent</p>
+                </div>
+                <div id="white">
+                    <h4>White</h4>
+                    <p>Background</p>
+                </div>
             </div>
         </section>
         <section>
-            <h2>Typography</h2>
+            <h3>Typography</h3>
+            <p>Mulish</p>
         </section>
-        <section>
-            <h2>Wireframe</h2>
+        <section id="wireframe">
+            <h3 id="wire">Wireframe</h3>
             <div>
-                <h3>Mobile</h3>
+                <h4>Mobile</h4>
                 <div><img src="images/mobile_wireframe.png" alt="mobile_wireframe"></div>
             </div>
             <div>
-                <h3>Desktop</h3>
+                <h4>Desktop</h4>
                 <div><img src="images/desktop_wireframe.png" alt="desktop_wireframe"></div>
             </div>
         </section>
     </main>
     <footer>
         <div>
-            <img src="images/inverse.png" alt="inverse logo">
+            <img src="images/inverse_50.png" alt="inverse logo">
         </div>
         <p>
             &#169;
@@ -97,5 +113,7 @@
         </p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
 </body>
 </html>

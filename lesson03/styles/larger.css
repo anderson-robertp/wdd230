@@ -19,12 +19,13 @@
     #menu{
         display: none;
     }
-    .lessoncard{
-        grid-column: 1;
-        box-sizing: border-box;
+    #wireframe {
+        grid-column: 1/3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
-    .infocard{
-        grid-column: 2;
-        box-sizing: border-box;
+    #wire {
+        grid-column: 1/3;
+        width: 1200px;
     }
 }
