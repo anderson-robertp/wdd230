@@ -5,17 +5,14 @@ body {
 }
 
 header {
-    background: #13505B;
-    color: white;
+    background: white;
+    color: #1B264F;
     font-family: 'Merriweather', serif;
     padding: 2rem;
     text-align: center;
     font-size: larger;
 }
-body header img {
-    width: 120px;
-    height: 160px;
-}
+
 #menu {
 	font-size: 1.5rem;
 	border: 1px solid rgba(0,0,0,.3);
@@ -38,7 +35,7 @@ body header img {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
-	background-color: #3A0842;
+	background-color: #274690;
 	color: #fff;
 }
 .navigation a {
@@ -49,53 +46,18 @@ body header img {
 	color: #fff;
 }
 .navigation a:hover {
-	background-color: #D7D9CE;
-	color: #119DA4;
+	background-color: #1B264F;
+	color: #FB3640;
 	font-weight: 700;
 }
 .open a {
 	display: block;
 }
 .active::before {
-	content: "🎲";  /* just a wayfinding symbol for the user */
+	content: "🦈";  /* just a wayfinding symbol for the user */
 }
-/*nav a{
-    display: block;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    padding: 1rem;
-    text-align: center; 
-}
-nav a {
-    margin-top: 3px;
-    margin-bottom: 3px;
-    display: block;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    padding: 1rem;
-    text-align: center;
-}
-nav a:link {
-    color: white;
-    text-decoration: none;
-}
-nav a:visited {
-    color: white;
-    text-decoration: none;
-}
-nav a:hover{
-    color: #119DA4;
-    text-decoration: none;
-    background-color: #D7D9CE;
-}
-nav a:active{
-    color: #000;
-    text-decoration: none;
-}*/
 main {
-    background: #D7D9CE;
+    background: white;
     color: black;
     font-family: 'Roboto', sans-serif;
     padding: 1rem;
@@ -105,48 +67,32 @@ main {
 }
 h2 {
     border-bottom-style: solid;
-    border-color: gray;
+    border-color: #07BEB8;
 }
 h3 {
-    background: #119DA4;
+    background: #07BEB8;
     padding: 1rem;
     margin: auto;
 }
-ul {
-    list-style-type: none;
-    text-align: left;
-}
-ul a {
-    color: #000;
-    text-decoration: none;
-}
-ul a:hover {
-    color: white;
-    text-decoration: none;
-    background-color: #119DA4;
-}
-ul a:active {
-    color: white;
-    text-decoration: none;
-    background-color: #119DA4;
-}
-ul a:visited {
-    color: #000;
-    text-decoration: none;
-}
-.lessoncard {
+h4 {
     border-style: solid;
     border-radius: 5px;
-    padding: 1rem;
-    
-    
 }
-.infocard{
-    border-style: solid;
-    border-radius: 5px;
-    padding: 1rem;
-    
-    
+#space {
+    background-color: #1B264F;
+    color: white;
+}
+#blue {
+    background-color: #274690;
+    color: white;
+}
+#green {
+    background-color: #07BEB8;
+    color: #000;
+}
+#red {
+    background-color: #FB3640;
+    color: black;
 }
 iframe{
     width: 100%;
@@ -157,7 +103,7 @@ iframe{
     border-radius: 5px;
 }
 footer {
-    background: #13505B;
+    background: #1B264F;
     color: white;
     font-family: 'Merriweather', serif;
     padding: 1rem;
