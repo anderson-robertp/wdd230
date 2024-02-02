@@ -1,0 +1,22 @@
+body {
+    display: grid;
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background: white;
+    color: #1B264F;
+    font-family: 'Mulish', sans-serif;
+    padding: 2rem;
+    text-align: center;
+    font-size: larger;
+    display: flex;
+}
+footer {
+    background: #1B264F;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    padding: 1rem;
+    text-align: center; 
+}

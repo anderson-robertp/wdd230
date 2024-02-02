@@ -15,11 +15,15 @@
     <meta property="og:image" content="https://heartoflouisiana.com/wp-content/uploads/2021/12/Lake_Bistineau_Cypress_Moss_09_1700x1130-1-1700x660.jpg">
     <meta property="og:url" content="https://anderson-robertp.github.io/wdd230/chamber">
     <!-- Fonts and Styles-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
-    <title>Robert Anderson - WDD 230 - Web Frontend Development</title>
+    <title>Franklin Parish Chamber of Commerce - WDD 230 - Web Frontend Development</title>
 </head>
 <body>
     <header>
@@ -38,10 +42,32 @@
     </nav>
     <main>
         <img id="hero" src="images/chamber.jpg" alt="photo of chamber of commerce">
-        <section id="events"></section>
-        <section id="weather"></section>
-        <section id="spotlight"></section>
+        <section id="events">
+            <h3>Events</h3>
+            <img src="images/festival.jpg">
+        </section>
+        <section id="weather">
+            <h3>Weather</h3>
+            <img src="images/weather.jpg" alt="lady with umbrella in rain">
+        </section>
+        <section id="spotlight">
+            <h3>Spotlight</h3>
+            <img src="images/cotton.jpg">
+            <img src="images/swamp.jpg">
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <img src="images/inverse_50.png">
+        <p>&#169; <span id="year">????</span></p>
+        <div id="contact">
+            <h4>Contact</h4>
+            <p>Insert Address</p>
+        </div>
+        <p>Robert Anderson</p>
+        <p>Not a real site. Made for class BYUI WDD 230</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
 </body>
 </html>
