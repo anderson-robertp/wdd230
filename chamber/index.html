@@ -27,21 +27,25 @@
 </head>
 <body>
     <header>
-        <img src="images/just_icon_50.png" alt="FPCC logo">
-        <h1>Franklin Parish</h1>
-        <h2>Chamber of Commerce</h2>
+        <div id="head"><img src="images/just_icon_50.png" alt="franklin chamber logo"></div>
+        <div id="title">
+            <h1>Franklin Parish</h1>
+            <h2>Chamber of Commerce</h2>
+        </div>
         <button id="subscribe">Subscribe</button>
         <button id="login">Login</button>
-        <button id="join">Join</button>
+        <button onclick="location.href=join.html" id="join">Join</button>
     </header>
     <button id="menu"></button>
-    <nav id="navigation">
+    <nav class="navigation">
         <a href="#" class="active">Home</a>
         <a href="discover.html">Discover</a>
         <a href="directory.html">Directory</a>
     </nav>
     <main>
-        <img id="hero" src="images/chamber.jpg" alt="photo of chamber of commerce">
+        <div id="hero">
+            <img src="images/chamber.jpg" alt="photo of chamber of commerce">
+        </div>
         <section id="events">
             <h3>Events</h3>
             <img src="images/festival.jpg">
@@ -58,13 +62,13 @@
     </main>
     <footer>
         <img src="images/inverse_50.png">
-        <p>&#169; <span id="year">????</span></p>
         <div id="contact">
             <h4>Contact</h4>
             <p>Insert Address</p>
+            <p>Insert Phone Numbers</p>
         </div>
-        <p>Robert Anderson</p>
-        <p>Not a real site. Made for class BYUI WDD 230</p>
+        <p>&#169; <span id="year">????</span> Robert Anderson</p>
+        <p id="disclaimer">Not a real site. Project for class BYUI WDD 230</p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
