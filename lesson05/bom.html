@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bom.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="mode">
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round"></span>
+                    <span class="sun-icon">&#9728;</span>
+                    <span class="moon-icon">&#9790;</span>
+            </label>
+        </div>
+        <script src="scripts/darkmode.js"></script>
+        <div id="title">
+            <h1>📖 Book of Mormon - Top 10</h1>
+        </div>
+    </header>
+    <button id="menu"></button>
+    <nav class="navigation">
+        <a href="#" class="active">Home</a>
+        <a href="lesson03/chamber-site-plan.html">Site Plan</a>
+        <a href="chamber/">Chamber</a>
+        <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a><br>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/25?lang=eng#p26" target="_blank">Scripture</a>
+    </nav>
+    <main>
+        <label for="favchap">Enter Book and Chapter: </label>
+        <input type="text" id="favchap" placeholder="Alma 5">
+        <button type="submit" id="chapter">Add Chapter</button>
+        <ul id="list"></ul>
+    </main>
+    <footer>
+    <p>&#169; <span id="year">????</span></p>
+        <p id="name">Robert Anderson</p>
+        <p id="locale">Louisiana</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/bom.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+</body>
+</html>
