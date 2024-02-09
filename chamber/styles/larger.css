@@ -1,8 +1,13 @@
 @media (min-width: 1081px) {
+    #title{
+        left: -11rem;
+        font-size: larger;
+    }
     .navigation{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        font-size: larger;
     }
     .navigation a {
 		display: block;

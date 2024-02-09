@@ -2,8 +2,14 @@
     header {
         flex-direction: row;
     }
-    button{
+    #title{
+        position: relative;
+        bottom: -2rem;
+    }
+    header button{
         align-self: flex-end;
+        position: relative;
+        bottom: -8rem;
     }
     .navigation{
         display: flex;
