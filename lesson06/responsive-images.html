@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+    <title>Responsive images</title>
+</head>
+<body>
+    <Header></Header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-med.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="exterior of the Baton Rouge Temple" width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
