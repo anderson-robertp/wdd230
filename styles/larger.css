@@ -18,7 +18,9 @@
         width: 100%;
         height: auto;
     }
-    
+    .herolabel {
+        top: 20px;
+    }
     h2{
         grid-column: 1/3;
     }
