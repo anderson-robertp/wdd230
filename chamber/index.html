@@ -65,17 +65,28 @@
         </section>
         <section id="weather">
             <h3>Weather</h3>
-            <picture>
-                <img src="images/weather.webp" alt="lady with umbrella in rain">
-            </picture>
-            <div id="weatherinfo">
-                
+            <div class="weather-container">
+                <picture>
+                    <img src="images/weather.webp" alt="lady with umbrella in rain">
+                </picture>
+                <div id="weatherinfo">
+                    <p>Temperature: <span id="temperature">44</span> &deg;F</p>
+                    <p>Wind Speed: <span id="windSpeed">13.6</span> m/s</p>
+                    <p>Wind Chill: <span id="windChill">--</span> &deg;F</p>
+                </div>
             </div>
         </section>
         <section id="spotlight">
             <h3>Spotlight</h3>
-            <img src="images/cotton.webp" alt="photo of a cotton field">
-            <img src="images/swamp.webp" alt="picture of a swamp">
+            <picture>
+                <img src="images/cotton.webp" alt="photo of a cotton field">
+            </picture>
+            <picture>
+                <img src="images/swamp.webp" alt="picture of a swamp">
+            </picture>
+            <picture>
+                <img src="images/chamber.webp" alt="photo of chamber of commerce">
+            </picture>           
         </section>
     </main>
     <footer>
@@ -91,5 +102,6 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

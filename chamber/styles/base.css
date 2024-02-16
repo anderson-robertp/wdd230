@@ -184,6 +184,20 @@ main section {
   margin: auto;
   padding: 1px;
 }
+#weather {
+  position: relative;
+}
+.weather-container {
+  position: relative; /* Set position to relative to contain absolute positioning */
+}
+#weatherinfo {
+  position: absolute; /* Position the weather info absolutely */
+  top: 50px; /* Place the weather info at the top of its containing block */
+  left: 120px; /* Place the weather info at the left of its containing block */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for better readability */
+  padding: 10px; /* Add some padding for better spacing */
+  color: black;
+}
 footer {
   background: #1B264F;
   color: white;
