@@ -1,0 +1,6 @@
+@media (min-width:505px)  and (max-width: 1080px) {
+    .herolabel{
+        top: 400px;
+        left: 400px;
+    }
+}
