@@ -1,4 +1,15 @@
 @media (min-width: 1081px) {
+    header {
+        flex-direction: row;
+        margin: auto;
+        padding: auto;
+    }
+    .profile {
+        margin: 1rem;
+    }
+    #mode {
+        right: 20rem;
+    }
     .navigation{
         display: flex;
         flex-direction: row;
