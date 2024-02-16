@@ -146,41 +146,6 @@ body header img {
 .active::before {
 	content: "🎲";  /* just a wayfinding symbol for the user */
 }
-/*nav a{
-    display: block;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    padding: 1rem;
-    text-align: center; 
-}
-nav a {
-    margin-top: 3px;
-    margin-bottom: 3px;
-    display: block;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 24px;
-    padding: 1rem;
-    text-align: center;
-}
-nav a:link {
-    color: white;
-    text-decoration: none;
-}
-nav a:visited {
-    color: white;
-    text-decoration: none;
-}
-nav a:hover{
-    color: #119DA4;
-    text-decoration: none;
-    background-color: #D7D9CE;
-}
-nav a:active{
-    color: #000;
-    text-decoration: none;
-}*/
 .hero {
     margin: 10px auto;
 	position: relative;

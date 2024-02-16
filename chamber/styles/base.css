@@ -16,7 +16,7 @@ header {
 #mode {
   position: absolute;
   right: 2rem;
-  top: 2rem;
+  top: 26rem;
 }
 .switch {
   position: relative;
@@ -104,19 +104,6 @@ input:checked + .slider:before {
 #title {
     flex: 50%;
 }
-header button {
-  height: 48px;
-  width: 120px;
-  background-color: #07BEB8;
-  color: black;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-#join{
-  background-color: #274690;
-  color: white;
-}
 header button:hover{
   background-color: #FB3640;
   color: white;
@@ -129,10 +116,10 @@ header button:hover{
 	font-size: 1.5rem;
 	border: 1px solid rgba(0,0,0,.3);
 	padding: 3px 7px 6px;
-	background-color: #eee;
-	color: #000;
+	background-color: #1B264F;
+	color: white;
   height: 30px;
-  width: 120px;
+  width: auto;
 }
 
 #menu::before {
@@ -182,15 +169,25 @@ img {
   max-width: 100%;
   height:auto;
 }
-#hero {
-  /*position: absolute;
-  max-width: max-content;*/
-  
+.hero {
+  margin: 10px auto;
+	position: relative;
+  height: auto;
+  width: 100%;
+}
+.hero img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+main section {
+  margin: auto;
+  padding: 1px;
 }
 footer {
-    background: #1B264F;
-    color: white;
-    font-family: 'Mulish', sans-serif;
-    padding: 1rem;
-    text-align: center; 
+  background: #1B264F;
+  color: white;
+  font-family: 'Mulish', sans-serif;
+  padding: 1rem;
+  text-align: center; 
 }

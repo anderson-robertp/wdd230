@@ -38,35 +38,44 @@
         <script src="scripts/darkmode.js"></script>
         <div id="head"><img src="images/just_icon_50.png" alt="franklin chamber logo"></div>
         <div id="title">
-            <h1>Franklin Parish</h1>
-            <h2>Chamber of Commerce</h2>
+            <h1>Franklin Parish<br>Chamber of Commerce</h1>
         </div>
-        <button id="subscribe">Subscribe</button>
-        <button id="login">Login</button>
-        <button onclick="location.href=join.html" id="join">Join</button>
-    </header>
+        </header>
     <button id="menu"></button>
     <nav class="navigation">
         <a href="#" class="active">Home</a>
         <a href="discover.html">Discover</a>
         <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
     </nav>
     <main>
-        <div id="hero">
-            <img src="images/chamber.jpg" alt="photo of chamber of commerce">
+        <div class="hero">
+            <picture>
+                <source srcset="images/wdd230-small.webp" media="(max-width: 800px)">
+                <source srcset="images/wdd230-medium.webp" media="(max-width: 1080px)">
+                <source srcset="images/wdd230-large.webp" media="(min-width: 1081px)">
+                <img src="images/wdd230-org.webp" alt="photo of chamber of commerce">
+            </picture>
         </div>
         <section id="events">
             <h3>Events</h3>
-            <img src="images/festival.jpg" alt="photo of a festival">
+            <picture>
+                <img src="images/festival.webp" alt="photo of a festival">
+            </picture>
         </section>
         <section id="weather">
             <h3>Weather</h3>
-            <img src="images/weather.jpg" alt="lady with umbrella in rain">
+            <picture>
+                <img src="images/weather.webp" alt="lady with umbrella in rain">
+            </picture>
+            <div id="weatherinfo">
+                
+            </div>
         </section>
         <section id="spotlight">
             <h3>Spotlight</h3>
-            <img src="images/cotton.jpg" alt="photo of a cotton field">
-            <img src="images/swamp.jpg" alt="picture of a swamp">
+            <img src="images/cotton.webp" alt="photo of a cotton field">
+            <img src="images/swamp.webp" alt="picture of a swamp">
         </section>
     </main>
     <footer>
