@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <title>Lazy Loading</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Lazy Loading
+        </h1>
+    </header>
+    <main>
+        <img src="http://placekitten.com/400/600" alt="picture of a kitten" loading="lazy" width="400"  height="600">
+        <img src="https://picsum.photos/seed/necromancer/400/600" alt="random picture" loading="lazy" width="400"  height="600">
+        <img src="https://picsum.photos/seed/car/400/600" alt="random picture" loading="lazy" width="400"  height="600">
+        <img src="https://picsum.photos/seed/child/400/600" alt="random picture" loading="lazy" width="400"  height="600">
+        <img src="https://picsum.photos/seed/wife/400/600" alt="random picture" loading="lazy" width="400"  height="600">
+        <img src="http://placebear.com/400/600" alt="picture of a bear" loading="lazy" width="400"  height="600">
+    </main>
+    <footer>
+        <p>&#169; <span id="year">????</span></p>
+        <p id="name">Robert Anderson</p>
+        <p id="locale">Louisiana</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>
