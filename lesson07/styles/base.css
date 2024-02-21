@@ -15,10 +15,23 @@ main {
     justify-content: center;
     align-items: center;
 }
+img {
+    width: 100%;
+    background: black;
+    animation: fade 5s;
+}
 footer {
     background: #13505B;
     color: white;
     font-family: 'Merriweather', serif;
     padding: 1rem;
     text-align: center;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
 }
