@@ -46,61 +46,67 @@
         <a href="join.html">Join</a>
     </nav>
     <main>
-        <Section>
-            <h2>About Us</h2>
-        </Section>
-        <picture>
-            <img src="https://picsum.photos/seed/aboutus/600/400" alt="random picture" loading="lazy" width="600"  height="400">
-        </picture>
-        <Section>
-            <h2>Membership</h2>
-        </Section>
-        <picture>
-            <img src="https://picsum.photos/seed/membership/600/400" alt="random picture" loading="lazy" width="600"  height="400">
-        </picture>
-        <Section>
-            <h2>Calender</h2>
-        </Section>
-        <picture>
-            <img src="https://picsum.photos/seed/calender/600/400" alt="random picture" loading="lazy" width="600"  height="400">
-        </picture>
-        <Section>
-            <h2>Visitor Information</h2>
-        </Section>
-        <picture>
-            <img src="https://picsum.photos/seed/visitor/600/400" alt="random picture" loading="lazy" width="600"  height="400">
-        </picture>
-        <Section>
-            <h2>Partnerships and Affiliations</h2>
-        </Section>
-        <picture>
-            <img src="https://picsum.photos/seed/partner/600/400" alt="random picture" loading="lazy" width="600"  height="400">
-        </picture>
-        <Section>
-            <h2>Community Initiatives</h2>
-        </Section>
-        <picture>
-            <img src="https://picsum.photos/seed/community/600/400" alt="random picture" loading="lazy" width="600"  height="400">
-        </picture>
-        <Section>
-            <h2>Date</h2>
-        </Section>
-        <picture>
-            <img src="https://picsum.photos/seed/date/600/400" alt="random picture" loading="lazy" width="600"  height="400">
-        </picture>
+        <div class="discoverCards">
+            <Section>
+                <h2>About Us</h2>
+            </Section>
+            <picture>
+                <img src="https://picsum.photos/seed/aboutus/600/400" alt="random picture" loading="lazy" width="600"  height="400">
+            </picture>
+            <Section>
+                <h2>Membership</h2>
+            </Section>
+            <picture>
+                <img src="https://picsum.photos/seed/membership/600/400" alt="random picture" loading="lazy" width="600"  height="400">
+            </picture>
+            <Section>
+                <h2>Calender</h2>
+                <iframe src="https://calendar.google.com/calendar/embed?src=franklinchamber48%40gmail.com&ctz=America%2FChicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </Section>
+            <picture>
+                <img src="https://picsum.photos/seed/calender/600/400" alt="random picture" loading="lazy" width="600"  height="400">
+            </picture>
+            <Section>
+                <h2>Visitor Information</h2>
+            </Section>
+            <picture>
+                <img src="https://picsum.photos/seed/visitor/600/400" alt="random picture" loading="lazy" width="600"  height="400">
+            </picture>
+            <Section>
+                <h2>Partnerships and Affiliations</h2>
+            </Section>
+            <picture>
+                <img src="https://picsum.photos/seed/partner/600/400" alt="random picture" loading="lazy" width="600"  height="400">
+            </picture>
+            <Section>
+                <h2>Community Initiatives</h2>
+            </Section>
+            <picture>
+                <img src="https://picsum.photos/seed/community/600/400" alt="random picture" loading="lazy" width="600"  height="400">
+            </picture>
+            <Section>
+                <h2>Date</h2>
+                <p><span id="date"></span></p>
+            </Section>
+            <picture>
+                <img src="https://picsum.photos/seed/date/600/400" alt="random picture" loading="lazy" width="600"  height="400">
+            </picture>
+        </div>
     </main>
     <footer>
         <img src="images/inverse_50.png" alt="inverse logo">
         <div id="contact">
             <h4>Contact</h4>
-            <p>Insert Address</p>
-            <p>Insert Phone Numbers</p>
+            <p>123 Center Street<br>Winnsboro,LA 71295</p>
+            <p>555-123-4567</p>
+            <p>franklinchamber48@gmail.com</p>
         </div>
-        <p>&#169; <span id="year">????</span> Robert Anderson</p>
+        <p id="copy">&#169; <span id="year">????</span> Robert Anderson</p>
         <p id="disclaimer">Not a real site. Project for class BYUI WDD 230</p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/visitDate.js"></script>
 </body>
 </html>
