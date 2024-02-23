@@ -24,29 +24,80 @@
 </head>
 <body>
     <header>
-        <img src="images/just_icon_50.png" alt="FPCC logo">
-        <h1>Franklin Parish</h1>
-        <h2>Chamber of Commerce</h2>
-        <button id="subscribe">Subscribe</button>
-        <button id="login">Login</button>
-        <button id="join">Join</button>
+        <div id="mode">
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider round"></span>
+                    <span class="sun-icon">&#9728;</span>
+                    <span class="moon-icon">&#9790;</span>
+            </label>
+        </div>
+        <script src="scripts/darkmode.js"></script>
+        <div id="head"><img src="images/just_icon_50.png" alt="franklin chamber logo"></div>
+        <div id="title">
+            <h1>Franklin Parish<br>Chamber of Commerce</h1>
+        </div>
     </header>
     <button id="menu"></button>
-    <nav id="navigation">
-        <a href="#" class="active">Home</a>
-        <a href="discover.html">Discover</a>
+    <nav class="navigation">
+        <a href="index.html" >Home</a>
+        <a href="#" class="active">Discover</a>
         <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
     </nav>
-    <main></main>
+    <main>
+        <Section>
+            <h2>About Us</h2>
+        </Section>
+        <picture>
+            <img src="https://picsum.photos/seed/aboutus/600/400" alt="random picture" loading="lazy" width="600"  height="400">
+        </picture>
+        <Section>
+            <h2>Membership</h2>
+        </Section>
+        <picture>
+            <img src="https://picsum.photos/seed/membership/600/400" alt="random picture" loading="lazy" width="600"  height="400">
+        </picture>
+        <Section>
+            <h2>Calender</h2>
+        </Section>
+        <picture>
+            <img src="https://picsum.photos/seed/calender/600/400" alt="random picture" loading="lazy" width="600"  height="400">
+        </picture>
+        <Section>
+            <h2>Visitor Information</h2>
+        </Section>
+        <picture>
+            <img src="https://picsum.photos/seed/visitor/600/400" alt="random picture" loading="lazy" width="600"  height="400">
+        </picture>
+        <Section>
+            <h2>Partnerships and Affiliations</h2>
+        </Section>
+        <picture>
+            <img src="https://picsum.photos/seed/partner/600/400" alt="random picture" loading="lazy" width="600"  height="400">
+        </picture>
+        <Section>
+            <h2>Community Initiatives</h2>
+        </Section>
+        <picture>
+            <img src="https://picsum.photos/seed/community/600/400" alt="random picture" loading="lazy" width="600"  height="400">
+        </picture>
+        <Section>
+            <h2>Date</h2>
+        </Section>
+        <picture>
+            <img src="https://picsum.photos/seed/date/600/400" alt="random picture" loading="lazy" width="600"  height="400">
+        </picture>
+    </main>
     <footer>
-        <img src="images/inverse_50.png">
-        <p>&#169; <span id="year">????</span></p>
+        <img src="images/inverse_50.png" alt="inverse logo">
         <div id="contact">
             <h4>Contact</h4>
             <p>Insert Address</p>
+            <p>Insert Phone Numbers</p>
         </div>
-        <p>Robert Anderson</p>
-        <p>Not a real site. Made for class BYUI WDD 230</p>
+        <p>&#169; <span id="year">????</span> Robert Anderson</p>
+        <p id="disclaimer">Not a real site. Project for class BYUI WDD 230</p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>

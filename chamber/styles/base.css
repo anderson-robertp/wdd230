@@ -165,9 +165,11 @@ main {
   background-color: #121212;
   color: white;
 }
-img {
+main img {
   max-width: 100%;
   height:auto;
+  background: black;
+  animation: fade 2s;
 }
 .hero {
   margin: 10px auto;
@@ -179,6 +181,8 @@ img {
 	width: 100%;
 	height: auto;
 	object-fit: cover;
+  background: black;
+  animation: fade 2s;
 }
 main section {
   margin: auto;
@@ -204,4 +208,12 @@ footer {
   font-family: 'Mulish', sans-serif;
   padding: 1rem;
   text-align: center; 
+}
+@keyframes fade {
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 100;
+  }
 }

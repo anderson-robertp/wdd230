@@ -1,9 +1,9 @@
-@media (min-width: 1079px) {
+@media (min-width: 700px) and (max-width: 1080px) {
     header {
         flex-direction: row;
     }
     #mode {
-        top: 26rem;
+        top: 17rem;
     }
     #title{
         position: relative;
