@@ -58,7 +58,7 @@
                 <source srcset="images/temple_small.webp" media="(max-width: 500px)">
                 <source srcset="images/temple_medium.webp" media="(max-width: 1080px)">
                 <source srcset="images/temple_large.webp" media="(min-width: 1081px)">
-                <img src="images/temple_large.webp" alt="calgary alberta lds temple">
+                <img src="images/temple_large.webp" alt="calgary alberta lds temple" loading="lazy">
             </picture>
             <div class="herolabel">
                 <p>Calgary Alberta Canada Temple</p>
@@ -85,7 +85,7 @@
             <h3>Information</h3>
             <p>Location</p>
             <p>Weather</p>
-            <p>Number of Visits</p>
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
         </section>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d868447.2234530003!2d-92.34707775219599!3d31.760339290159813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1706234148766!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="map-of-North-Louisiana"></iframe>
     </main>
@@ -98,5 +98,6 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/visitCounter.js"></script>
 </body>
 </html>
