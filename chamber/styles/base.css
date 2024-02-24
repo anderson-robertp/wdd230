@@ -206,6 +206,15 @@ main section {
   display: grid;
   grid-column: 1fr;
 }
+.discoverCards section {
+  width: 450px;
+  height: auto;
+}
+#calender {
+  
+  width: 450;
+  height: auto;
+}
 footer {
   background: #1B264F;
   color: white;

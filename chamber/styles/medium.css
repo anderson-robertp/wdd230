@@ -44,6 +44,11 @@
     .discoverCards {
         grid-template-columns: 1fr 1fr;
     }
+    .discoverPic {
+        width: 100%;
+        height: auto;
+        grid-column: 2/4;
+    }
     footer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
