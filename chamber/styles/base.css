@@ -202,17 +202,17 @@ main section {
   padding: 10px; /* Add some padding for better spacing */
   color: black;
 }
-.discoverCards{
+/*.discoverCards{
   display: grid;
-  grid-column: 1fr;
-}
+  grid-template-columns: 1fr;
+}*/
 .discoverCards section {
   width: 450px;
   height: auto;
 }
 #calender {
   
-  width: 450;
+  width: 450px;
   height: auto;
 }
 footer {

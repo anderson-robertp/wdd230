@@ -37,12 +37,44 @@
         height: auto;
         object-fit: cover;
     }
+    #about {
+        grid-column: 1;
+    }
+    #member {
+        grid-column: 1;
+    }
+    #calenderSection {
+        grid-column: 1;
+    }
+    #visitor {
+        grid-column: 1;
+    }
+    #partner {
+        grid-column: 1;
+    }
+    #community {
+        grid-column: 1;
+    }
+    #dateSection {
+        grid-column: 1;
+    }
+    .discoverPic {
+        grid-column: 2/4;
+        width: 100%;
+        height: auto;
+    }
     /*#spotlight{
     
     }*/
-    .discoverCards {
-        grid-template-columns: 1fr 2fr;
+    /*.discoverCards {
+        
     }
+    .discoverCards picture {
+        width: 100%;
+        height: auto;
+        grid-column: 2/3;
+        
+    }*/
     footer{
         grid-template-columns: 1fr 1fr 2fr;
         grid-template-rows: auto;

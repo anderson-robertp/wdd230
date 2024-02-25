@@ -4,6 +4,7 @@ let today = new Date();
 console.log('today: '+ today);
 
 let lastVisit = Date(window.localStorage.getItem("dateVisit-ls")) || 0;
+/*let lastVisit = today - (4 * 86400000)*/
 console.log('last visit: ' + lastVisit)
 
 let sinceLastVisit = today.getTime() - lastVisit;
@@ -20,6 +21,11 @@ if (sinceLastVisit  <= 86400000) {
     }
 } else {
     dateDisp.textContent = 'Welcome! Let us know if you have any questions.';
+    /*let fourDays = today - (4*86400000)
+    localStorage.setItem("dateVisit-ls",fourDays)*/
 }
 
-localStorage.setItem("dateVisit-ls",today);
+/*localStorage.setItem("dateVisit-ls",today - (4*86400000));*/
+if (sinceLastVisit == 0) {
+    localStorage.setItem("dateVisit-ls",today);
+}
