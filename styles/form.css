@@ -1,0 +1,219 @@
+body {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background: #13505B;
+    color: white;
+    font-family: 'Merriweather', serif;
+    padding: 2rem;
+    text-align: center;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#mode {
+    position: absolute;
+    right: 5rem;
+    top: 2rem;
+}
+.switch {
+    position: relative;
+    right: 2rem;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+    
+    /* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+    
+    /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+    
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+    
+input:checked + .slider {
+    background-color: #2196F3;
+}
+    
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+    
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+    
+   /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+    
+.slider.round:before {
+    border-radius: 50%;
+}
+.sun-icon {
+    display: none;
+}
+  
+.moon-icon {
+    display: none;
+}
+  
+  /* Show sun icon when in light mode */
+.light-mode .sun-icon {
+    display: inline-block;
+}
+  
+  /* Show moon icon when in dark mode */
+.dark-mode .moon-icon {
+    display: inline-block;
+}
+#menu {
+	font-size: 1.5rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+    
+
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.show::before {
+	content: "❎";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #3A0842;
+	color: #fff;
+}
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #D7D9CE;
+	color: #119DA4;
+	font-weight: 700;
+}
+.open a {
+	display: block;
+}
+.active::before {
+	content: "🎲";  /* just a wayfinding symbol for the user */
+}
+main {
+    background: #D7D9CE;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem;
+    text-align: center;
+    row-gap: 3px;
+    column-gap: 2px;
+}
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+#formcontainer{
+    text-align: center;
+}
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+input::placeholder {
+	font-size: 13px;
+}
+
+#formmessage {
+	visibility: none;
+	margin: 10px;
+	padding: 0.5rem;
+	color: red;
+}
+
+#password:invalid {
+	background-color: #fff0f3;
+	animation: shaketext 500ms;
+}
+input[name="email"]:required:valid {
+	background-color: #bed;
+}
+
+input[name="email"]:invalid {
+	background-color: #ffeeee;
+}
+#r{
+    width: 180px;
+    margin-bottom: 0;
+}
+#rvalues{
+    display: flex;
+    margin: 0 0 0 25px;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+#rvalues option {
+    flex: 1 1 auto;
+}
+footer {
+    background: #13505B;
+    color: white;
+    font-family: 'Merriweather', serif;
+    padding: 1rem;
+    text-align: center; 
+}
+@keyframes shaketext {
+	25% {
+		transform: translateX(3px);
+	}
+	50% {
+		transform: translateX(-3px);
+	}
+	75% {
+		transform: translateX(3px);
+	}
+}
