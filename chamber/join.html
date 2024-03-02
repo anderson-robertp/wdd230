@@ -24,29 +24,71 @@
 </head>
 <body>
     <header>
-        <img src="images/just_icon_50.png" alt="FPCC logo">
-        <h1>Franklin Parish</h1>
-        <h2>Chamber of Commerce</h2>
-        <button id="subscribe">Subscribe</button>
-        <button id="login">Login</button>
-        <button id="join">Join</button>
-    </header>
+        <div id="mode">
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider round"></span>
+                    <span class="sun-icon">&#9728;</span>
+                    <span class="moon-icon">&#9790;</span>
+            </label>
+        </div>
+        <script src="scripts/darkmode.js"></script>
+        <div id="head"><img src="images/just_icon_50.png" alt="franklin chamber logo"></div>
+        <div id="title">
+            <h1>Franklin Parish<br>Chamber of Commerce</h1>
+        </div>
+        </header>
     <button id="menu"></button>
-    <nav id="navigation">
-        <a href="#" class="active">Home</a>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
         <a href="discover.html">Discover</a>
         <a href="directory.html">Directory</a>
+        <a class="active" href=#>Join</a>
     </nav>
-    <main></main>
+    <main class="forms">
+        <h2>Sign up here.</h2>
+        <div class="form">
+            <form action="thankyou.html" method="get">
+                <!-- applicant's first name, text type, required, name, and id-->
+                <label for="fname">First Name: <input type="text" id="fname" name="fname" size="50" required placeholder="ex: John" autofocus></label><br>
+                <!-- applicant's last name, text type, required, name, and id-->
+                <label for="lname">Last Name: <input type="text" id="lname" name="lname" size="50" required placeholder="ex: Smith"></label><br>
+                <!-- applicant's title or position within their organization, text type, name, id, required, and pattern to only accept alpha characters, hyphens, and spaces with a minimum of seven characters using a regular expression -->
+                <label for="position">Title: <input type="text" name="position" id="position" required pattern="^[a-zA-Z\-s]{7,}$" size="45" placeholder="ex: CEO"></label><br>
+                <!-- email address, email type, required, name, id, and placeholder which contains an example email input.-->
+                <label for="email">Email: <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" size="50" placeholder="username@domain.com" title="A valid email address." required></label><br>
+                <!-- mobile phone number, telephone type, required, name, and id.-->
+                <label for="mobile">Mobile Phone Number: <input type="tel" name="mobile" id="mobile" required placeholder="XXX-XXX-XXXX"></label><br>
+                <!-- business/organization's name, text type, required, name, and id.-->
+                <label for="org">Business / Organization Name: <input name="org" type="text" id="org" size="50" required></label><br>
+                <!-- membership level-->
+                <label for="level">Memebrship Level:</label><br>
+                <input type="radio" id="np" name="level" value="NP">
+                <label for="np">NP Membership</label><br>
+                <input type="radio" id="bronze" name="level" value="Bronze">
+                <label>Bronze Membership</label><br>
+                <input type="radio" id="silver" name="level" value="Silver">
+                <label>Silver Membership</label><br>
+                <input type="radio" id="gold" name="level" value="Gold">
+                <label>Gold Membership</label><br>
+                <!-- business/organization's description, text area, name, and id.-->
+                <label for="about">Tell us about your organization...<textarea name="about" id="about" cols="50" rows="10"></textarea></label><br>
+                <!-- hidden date-->
+                <input type="hidden" name="subdate" id="subdate" value="" placeholder="YYYY-MM-DD">
+                <!-- submission button with type submit-->
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
     <footer>
-        <img src="images/inverse_50.png">
-        <p>&#169; <span id="year">????</span></p>
+        <img src="images/inverse_50.png" alt="inverse logo">
         <div id="contact">
             <h4>Contact</h4>
             <p>Insert Address</p>
+            <p>Insert Phone Numbers</p>
         </div>
-        <p>Robert Anderson</p>
-        <p>Not a real site. Made for class BYUI WDD 230</p>
+        <p>&#169; <span id="year">????</span> Robert Anderson</p>
+        <p id="disclaimer">Not a real site. Project for class BYUI WDD 230</p>
         <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
