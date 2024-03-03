@@ -46,25 +46,27 @@
         <a class="active" href=#>Join</a>
     </nav>
     <main class="forms">
-        <h2>Sign up here.</h2>
+        
         <div class="form">
-            <form action="thankyou.html" method="get">
+            <h2>Sign up here.</h2>
+            <p id="formalert"> </p>
+            <form action="thankyou.html" method="get" id="joinform">
                 <!-- applicant's first name, text type, required, name, and id-->
-                <label for="fname">First Name: <input type="text" id="fname" name="fname" size="50" required placeholder="ex: John" autofocus></label><br>
+                <label for="fname">First Name: <input type="text" id="fname" name="fname" size="38" required placeholder="ex: John" autofocus></label><br>
                 <!-- applicant's last name, text type, required, name, and id-->
-                <label for="lname">Last Name: <input type="text" id="lname" name="lname" size="50" required placeholder="ex: Smith"></label><br>
+                <label for="lname">Last Name: <input type="text" id="lname" name="lname" size="38" required placeholder="ex: Smith"></label><br>
                 <!-- applicant's title or position within their organization, text type, name, id, required, and pattern to only accept alpha characters, hyphens, and spaces with a minimum of seven characters using a regular expression -->
                 <label for="position">Title: <input type="text" name="position" id="position" required pattern="^[a-zA-Z\-s]{7,}$" size="45" placeholder="ex: CEO"></label><br>
                 <!-- email address, email type, required, name, id, and placeholder which contains an example email input.-->
-                <label for="email">Email: <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" size="50" placeholder="username@domain.com" title="A valid email address." required></label><br>
+                <label for="email">Email: <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" size="38" placeholder="username@domain.com" title="A valid email address." required></label><br>
                 <!-- mobile phone number, telephone type, required, name, and id.-->
-                <label for="mobile">Mobile Phone Number: <input type="tel" name="mobile" id="mobile" required placeholder="XXX-XXX-XXXX"></label><br>
+                <label for="mobile">Mobile Phone Number: <input type="tel" name="mobile" id="mobile" required placeholder="1235556789"></label><br>
                 <!-- business/organization's name, text type, required, name, and id.-->
                 <label for="org">Business / Organization Name: <input name="org" type="text" id="org" size="50" required></label><br>
                 <!-- membership level-->
                 <label for="level">Memebrship Level:</label><br>
                 <input type="radio" id="np" name="level" value="NP">
-                <label for="np">NP Membership</label><br>
+                <label for="np">Non Profit Membership</label><br>
                 <input type="radio" id="bronze" name="level" value="Bronze">
                 <label>Bronze Membership</label><br>
                 <input type="radio" id="silver" name="level" value="Silver">
@@ -78,6 +80,59 @@
                 <!-- submission button with type submit-->
                 <input type="submit" value="Submit">
             </form>
+        </div>
+        
+        <div id="memberCards">
+            <h2>Membership Level Descriptions</h2>
+            <div class="memberInfo">
+                <h3>Non Profit Membership</h3>
+                <p><strong>Description:</strong> Ideal for nonprofit organizations dedicated to community service and development.</p>
+                <p><strong>Price:</strong> $200 annually</p>
+                <p><strong>Benefits:</strong></p>
+                <ul>
+                    <li>Access to networking events tailored for nonprofit professionals.</li>
+                    <li>Visibility on the Chamber's website and promotional materials.</li>
+                    <li>Participation in community outreach programs and volunteer opportunities.</li>
+                    <li>Exclusive invitations to Chamber-sponsored workshops and seminars.</li>
+                </ul>
+            </div>
+            <div class="memberInfo">
+                <h3>Bronze Membership</h3>
+                <p><strong>Description:</strong> Entry-level membership suitable for small businesses and startups.</p>
+                <p><strong>Price:</strong> $500 annually</p>
+                <p><strong>Benefits:</strong></p>
+                <ul>
+                    <li>Basic listing in the Chamber's online directory.</li>
+                    <li>Networking opportunities at Chamber-sponsored events and mixers.</li>
+                    <li>Access to educational resources and workshops on business development.</li>
+                    <li>Member discounts on Chamber-sponsored programs and services.</li>
+                </ul>
+            </div>
+            <div class="memberInfo">
+                <h3>Silver Membership</h3>
+                <p><strong>Description:</strong> Mid-tier membership designed for growing businesses seeking enhanced visibility and support.</p>
+                <p><strong>Price:</strong> $1000 annually</p>
+                <p><strong>Benefits:</strong></p>
+                <ul>
+                    <li>Enhanced listing in the Chamber's online directory with a detailed company profile.</li>
+                    <li>Featured sponsorship opportunities at select Chamber events.</li>
+                    <li>Complimentary admission to exclusive networking luncheons and business expos.</li>
+                    <li>Access to specialized business training programs and mentorship opportunities.</li>
+                </ul>
+            </div>
+            <div class="memberInfo">
+                <h3>Gold Membership</h3>
+                <p><strong>Description:</strong> Premier membership package offering maximum exposure and premium benefits.</p>
+                <p><strong>Price:</strong> $2000 annually</p>
+                <p><strong>Benefits:</strong></p>
+                <ul>
+                    <li>Priority placement in the Chamber's online directory with premium branding options.</li>
+                    <li>VIP invitations to exclusive networking receptions and industry roundtables.</li>
+                    <li>Recognition as a top-tier sponsor at major Chamber events and galas.</li>
+                    <li>Dedicated account management and personalized support from Chamber staff.</li>
+                    <li>Complimentary access to premium business resources, including market research reports and strategic consultations.</li>
+                </ul>
+            </div>
         </div>
     </main>
     <footer>
@@ -93,5 +148,6 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/hiddendate.js"></script>
 </body>
 </html>
