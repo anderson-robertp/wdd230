@@ -215,6 +215,13 @@ main section {
   width: 450px;
   height: auto;
 }
+input[name="email"]:required:valid {
+	background-color: #bed;
+}
+
+input[name="email"]:invalid {
+	background-color: #ffeeee;
+}
 footer {
   background: #1B264F;
   color: white;
