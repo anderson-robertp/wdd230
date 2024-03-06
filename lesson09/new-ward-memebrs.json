@@ -1,0 +1,45 @@
+{
+    "wardInformation":{
+        "familyName": "Brooklyn",
+        "movedInDate": "2024-03-05",
+        "numberOfPeople": 7,
+        "visistedByBishopric": true,
+        "familyMembers": [
+            {
+                "name": "Raymond Holt",
+                "gender": "male",
+                "birthdate": "1955-04-13"
+            },
+            {
+                "name": "Madelin Wuntch",
+                "gender": "female",
+                "birthdate": "1965-09-19"
+            },
+            {
+                "name": "Jake Peralta",
+                "gender": "male",
+                "birthdate": "1981-06-19"
+            },
+            {
+                "name": "Amy Santiago",
+                "gender": "female",
+                "birthdate": "1982-05-16"
+            },
+            {
+                "name": "Rosa Diaz",
+                "gender": "female",
+                "birthdate": "1984-11-12"
+            },
+            {
+                "name": "Terry Jeffords",
+                "gender": "male",
+                "birthdate": "1968-07-30"
+            },
+            {
+                "name": "Charles Boyle",
+                "gender": "male",
+                "birthdate": "1978-05-19"
+            }
+        ]
+    }
+}
