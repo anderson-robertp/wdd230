@@ -202,14 +202,27 @@ main section {
   padding: 10px; /* Add some padding for better spacing */
   color: black;
 }
-/*.discoverCards{
+.discoverCards{
   display: grid;
   grid-template-columns: 1fr;
-}*/
+}
 .discoverCards section {
   width: 450px;
-  height: auto;
+  height: 460px;
 }
+.discPic {
+  height: 460px;
+  width: auto;
+}
+.discLabel {
+  position: absolute;
+  background: radial-gradient(#fff, #4D5B97);
+	border: 1px solid rgba(0,0,0,.75);
+	padding: .5rem;
+	box-shadow: 0 0 1rem #fff;
+	opacity: 0.75;
+}
+
 #calender {
   
   width: 450px;
