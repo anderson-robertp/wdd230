@@ -99,49 +99,6 @@ input:checked + .slider:before {
 .dark-mode .moon-icon {
     display: inline-block;
 }
-#menu {
-	font-size: 1.5rem;
-	border: 1px solid rgba(0,0,0,.3);
-	padding: 3px 7px 6px;
-	background-color: #eee;
-	color: #000;
-    
-
-}
-
-#menu::before {
-	content: "☰";
-}
-
-#menu.show::before {
-	content: "❎";
-}
-
-.navigation {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
-	background-color: #3A0842;
-	color: #fff;
-}
-.navigation a {
-	display: none;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-}
-.navigation a:hover {
-	background-color: #D7D9CE;
-	color: #119DA4;
-	font-weight: 700;
-}
-.open a {
-	display: block;
-}
-.active::before {
-	content: "🎲";  /* just a wayfinding symbol for the user */
-}
 main {
     background: #D7D9CE;
     color: black;
@@ -150,6 +107,7 @@ main {
     text-align: center;
     row-gap: 3px;
     column-gap: 2px;
+    align-items: center;
 }
 .dark-mode {
     background-color: #121212;
@@ -157,6 +115,7 @@ main {
 }
 #formcontainer{
     text-align: center;
+    padding: auto;
 }
 input:focus,
 textarea:focus {
@@ -185,19 +144,20 @@ input[name="email"]:required:valid {
 input[name="email"]:invalid {
 	background-color: #ffeeee;
 }
+
 #r{
-    width: 180px;
-    margin-bottom: 0;
+    width: 200px;
+    margin-bottom: 1;
 }
 #rvalues{
     display: flex;
-    margin: 0 0 0 25px;
+    margin: auto;
     width: 200px;
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;
+    justify-content: center;*/
 }
 #rvalues option {
-    flex: 1 1 auto;
+    flex: 1 8 auto;
 }
 footer {
     background: #13505B;

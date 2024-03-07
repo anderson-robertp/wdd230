@@ -17,3 +17,12 @@ function checkSame() {
 		pw2.style.color = "#000";
 	}
 }
+
+const value = document.getElementById("rangevalue");
+console.log(value.textContent)
+const input = document.getElementById("r");
+console.log(input.value)
+
+input.addEventListener("input", function(){
+	value.textContent = this.value;
+});

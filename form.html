@@ -34,43 +34,36 @@
              Forms
         </h1>
     </header>
-     <button id='menu'></button>
-     <nav class='navigation'>
-         <a href='index.html'>Home</a>
-         <a href='lesson03/chamber-site-plan.html'>Site Plan</a>
-         <a href='chamber/'>Chamber</a>
-         <a href="forms.html" class="active">Forms</a>
-         <a href='https://www.byui.edu/' target='_blank'>BYU-Idaho</a><br>
-         <a href='https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/25?lang=eng#p26' target='_blank'>Scripture</a>
-     </nav>
      <main>
         <p id="formmessage"> </p>
         <h1>Page Rating</h1>
         <p id="required">✳️ Indicates Required</p>
         <div id="formcontainer">
             <form action="record.html" method="get"> <!--https://www.w3schools.com/html/html_forms.asp-->
-                <label for="username">Username: <input type="text" id="username" name="username" size="50" required></label><br>
+                <label for="username">✳️ Username: <input type="text" id="username" name="username" size="50" required></label><br>
                 <!--<input type="text" id="username" name="username" size="50" required><br>-->
-                <label for="password">Password</label><br><!--https://codepen.io/blazzard-jason/pen/porGpMN-->
-                <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" size="50" required placeholder="At least 8 characters long." autocomplete="on"><br>
-                <label for="password2">Confirm Password</label><br>
-                <input type="password" id="password2" name="password2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" size="50" required placeholder="Confirm password" autocomplete="on"><br>
-                <label for="email">Email</label><br> <!--https://www.abstractapi.com/guides/html-email-validation-->
-                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9_.\-]+@byui\.edu" size="50" placeholder="username@byui.edu" title="A valid byui.edu email address." required><br>
-                <label for="r">Page Rating</label><br> <!--https://codepen.io/blazzard-jason/pen/WNNxwam-->
-                <input type="range" id="r" name="r" min="1" max="10" value="1" step="1" list="rvalues"><br>
-                <datalist id="rvalues">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </datalist>
+                <label for="password">✳️ Password: <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" size="50" required placeholder="At least 8 characters long." autocomplete="on"></label><br><!--https://codepen.io/blazzard-jason/pen/porGpMN-->
+                
+                <label for="password2">Confirm Password: <input type="password" id="password2" name="password2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" size="50" required placeholder="Confirm password" autocomplete="on"></label><br>
+                
+                <label for="email">✳️ Email: <input type="email" id="email" name="email" pattern="[a-zA-Z0-9_.\-]+@byui\.edu" size="50" placeholder="username@byui.edu" title="A valid byui.edu email address." required></label><br> <!--https://www.abstractapi.com/guides/html-email-validation-->
+                <div id="stupid">
+                    <label for="r">Page Rating: <div id="rangevalue">1</div></label> <!--https://codepen.io/blazzard-jason/pen/WNNxwam-->
+                    <input type="range" id="r" name="r" min="1" max="10" value="0" step="1" list="rvalues">
+                    <datalist id="rvalues">
+                        <option value="1" label="1"></option>
+                        <option value="2" label="2"></option>
+                        <option value="3" label="3"></option>
+                        <option value="4" label="4"></option>
+                        <option value="5" label="5"></option>
+                        <option value="6" label="6"></option>
+                        <option value="7" label="7"></option>
+                        <option value="8" label="8"></option>
+                        <option value="9" label="9"></option>
+                        <option value="10" label="10"></option>
+                    </datalist>
+                </div>
+                
                 <input type="submit" value="Submit">
             </form>
         </div>
@@ -82,7 +75,6 @@
         <p>Last Modified: <span id='lastModified'></span></p>
      </footer>
      <script src='scripts/getdates.js'></script>
-     <script src='scripts/hamburger.js'></script>
      <script src='scripts/forms.js'></script>
 </body>
 </html>
