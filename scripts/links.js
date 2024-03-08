@@ -25,7 +25,7 @@ function displayLinks(weeks) {
         var li = document.createElement('li');
         //append lesson
         li.textContent = `${lesson}: `;
-        console.log(li);
+        //console.log(li);
         links.forEach(link => {
             var url = link.url;
             var title = link.title;
@@ -39,7 +39,7 @@ function displayLinks(weeks) {
             //append to li
             li.appendChild(a);
         });
-        console.log(card);
+        //console.log(card);
         card.appendChild(li);
     });
 }
