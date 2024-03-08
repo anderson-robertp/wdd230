@@ -1,0 +1,62 @@
+{
+    "members":{
+        "chamberMembers": [
+            {
+                "name": "OUTOTUNE MUSIC",
+                "address": "1581 Highway 135 Winnsboro LA 71295",
+                "phone": "318-435-1615",
+                "website": "http://outotune.com/",
+                "logo": "images/outunemusic.webp",
+                "membership": "Bronze"
+            },
+            {
+                "name": "FRANKLIN STATE BANK",
+                "address": "802 Prairie St. Winnsboro LA 71295",
+                "phone": "318-435-3711",
+                "website": "http://www.fsbnet.com",
+                "logo": "images/fsb.svg",
+                "membership": "Gold"
+            },
+            {
+                "name": "Haring Catfish",
+                "address": "3889 Highway 562 Wisner, LA 71378",
+                "phone": "318-724-6133",
+                "website": "https://haringcatfish.com/",
+                "logo": "images/Logo-for-Haring-Catfish.png",
+                "membership": "Silver"
+            },
+            {
+                "name": "Donnell's Machine & Hydraulics",
+                "address": "1597 Highway 555 Winnsboro, LA 71295",
+                "phone": "318-722-3712",
+                "website": "https://donnellsmachine.com/",
+                "logo": "images/donnells.png",
+                "membership": "Silver"
+            },
+            {
+                "name": "San Marcos Mexican Restaurant",
+                "address": "4198 Front St, Winnsboro, LA 71295",
+                "phone": "(318) 435-0002",
+                "website": "",
+                "logo": "",
+                "membership": "Bronze"
+            },
+            {
+                "name": "LaSallle Community Action Assoc.",
+                "address": "4487 Front St, Winnsboro, LA 71295",
+                "phone": "(318) 435-6333",
+                "website": "",
+                "logo": "",
+                "membership": "Non Profit"
+            },
+            {
+                "name": "Toad School Mycology",
+                "address": "241 Norwood Rd, Winnsboro, LA 71295",
+                "phone": "318-439-7277",
+                "website": "https://toad-school-mycology.square.site/",
+                "logo": "images/toadschool.webp",
+                "membership": "Gold"
+            }
+        ]
+    }
+}

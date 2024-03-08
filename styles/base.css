@@ -109,8 +109,8 @@ body header img {
 	padding: 3px 7px 6px;
 	background-color: #eee;
 	color: #000;
-    
-
+    height: 30px;
+    width: auto;
 }
 
 #menu::before {
