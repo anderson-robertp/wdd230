@@ -24,20 +24,36 @@
 </head>
 <body>
     <header>
-        <img src="images/just_icon_50.png" alt="FPCC logo">
-        <h1>Franklin Parish</h1>
-        <h2>Chamber of Commerce</h2>
-        <button id="subscribe">Subscribe</button>
-        <button id="login">Login</button>
-        <button id="join">Join</button>
+        <div id="mode">
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider round"></span>
+                    <span class="sun-icon">&#9728;</span>
+                    <span class="moon-icon">&#9790;</span>
+            </label>
+        </div>
+        <script src="scripts/darkmode.js"></script>
+        <div id="head"><img src="images/just_icon_50.png" alt="franklin chamber logo"></div>
+        <div id="title">
+            <h1>Franklin Parish<br>Chamber of Commerce</h1>
+        </div>
     </header>
     <button id="menu"></button>
-    <nav id="navigation">
-        <a href="#" class="active">Home</a>
+    <nav class="navigation">
+        <a href="index.html" >Home</a>
         <a href="discover.html">Discover</a>
-        <a href="directory.html">Directory</a>
+        <a href="#" class="active">Directory</a>
+        <a href="join.html">Join</a>
     </nav>
-    <main></main>
+    <main class="directory">
+        <h2>Member Directory</h2>
+        <div id="toggle">
+            <button id="grid">Grid</button>
+            <button id="List">List</button>
+        </div>
+        <hr>
+        <div id="members"></div>
+    </main>
     <footer>
         <img src="images/inverse_50.png" alt="inverse logo">
         <div id="contact">
@@ -52,5 +68,6 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/directory.js"></script>
 </body>
 </html>

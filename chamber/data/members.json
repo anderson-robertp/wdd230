@@ -36,15 +36,15 @@
             {
                 "name": "San Marcos Mexican Restaurant",
                 "address": "4198 Front St, Winnsboro, LA 71295",
-                "phone": "(318) 435-0002",
+                "phone": "318-435-0002",
                 "website": "",
                 "logo": "",
                 "membership": "Bronze"
             },
             {
-                "name": "LaSallle Community Action Assoc.",
-                "address": "4487 Front St, Winnsboro, LA 71295",
-                "phone": "(318) 435-6333",
+                "name": "LaSalle Community Action Assoc.",
+                "address": "4487 Front St Winnsboro, LA 71295",
+                "phone": "318-435-6333",
                 "website": "",
                 "logo": "",
                 "membership": "Non Profit"
