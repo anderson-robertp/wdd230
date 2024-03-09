@@ -6,7 +6,7 @@
                 "address": "1581 Highway 135 Winnsboro LA 71295",
                 "phone": "318-435-1615",
                 "website": "http://outotune.com/",
-                "logo": "images/outunemusic.webp",
+                "logo": "images/outunemusic.jpg",
                 "membership": "Bronze"
             },
             {
@@ -37,16 +37,16 @@
                 "name": "San Marcos Mexican Restaurant",
                 "address": "4198 Front St, Winnsboro, LA 71295",
                 "phone": "318-435-0002",
-                "website": "",
-                "logo": "",
+                "website": "https://www.facebook.com/profile.php?id=100054544386486",
+                "logo": "images/sanmarcos.jpg",
                 "membership": "Bronze"
             },
             {
                 "name": "LaSalle Community Action Assoc.",
                 "address": "4487 Front St Winnsboro, LA 71295",
                 "phone": "318-435-6333",
-                "website": "",
-                "logo": "",
+                "website": "https://www.lasallecaa.net/",
+                "logo": "images/lasalle.jpg",
                 "membership": "Non Profit"
             },
             {

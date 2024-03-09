@@ -15,24 +15,37 @@ async function getLinks(URL) {
 
 function displayMembers(members) {
     members.chamberMembers.forEach(member => {
-        var name = member.name;
-        //console.log(name);
-        var address = member.address;
-        var phone = member.phone;
-        var website = member.website;
-        var logo = member.logo;
-        var membership = member.membership;
         // Create h3 element
         var h3 = document.createElement('h3');
         // append name
-        h3.textContent = name;
+        h3.textContent = member.name;
         // create p element for phone,address,website,membership and append
+        var pAddress = document.createElement('p');
+        var pPhone = document.createElement('p');
+        var pLevel = document.createElement('p');
+        pAddress.textContent = member.address;
+        pPhone.textContent = member.phone;
+        pLevel.textContent = `Membership: ${member.membership}`
+        // create a element
+        var aWeb = document.createElement('a');
+        // add attribtes
+        aWeb.href = member.website;
+        aWeb.textContent = member.website;
         // create img element
+        var imgLogo = document.createElement('img');
         // add attributes to img
+        imgLogo.setAttribute('src',member.logo)
+        imgLogo.setAttribute('alt',`logo of ${member.name}`)
+        imgLogo.setAttribute('loading','lazy')
         // create section element
         section = document.createElement('section')
         // append all items to section
         section.appendChild(h3);
+        section.appendChild(pAddress);
+        section.appendChild(pPhone);
+        section.appendChild(aWeb);
+        section.appendChild(imgLogo);
+        section.appendChild(pLevel);
         // append section to article
         display.appendChild(section);
     });

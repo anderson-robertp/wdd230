@@ -38,6 +38,7 @@ function displayLinks(weeks) {
             a.textContent = `| ${title} `;
             //append to li
             li.appendChild(a);
+            
         });
         //console.log(card);
         card.appendChild(li);
