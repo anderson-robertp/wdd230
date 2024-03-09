@@ -6,7 +6,7 @@
                 "address": "1581 Highway 135 Winnsboro LA 71295",
                 "phone": "318-435-1615",
                 "website": "http://outotune.com/",
-                "logo": "images/outotunemusic.jpg",
+                "logo": "images/outotunemusic.webp",
                 "membership": "Bronze"
             },
             {
@@ -22,7 +22,7 @@
                 "address": "3889 Highway 562 Wisner, LA 71378",
                 "phone": "318-724-6133",
                 "website": "https://haringcatfish.com/",
-                "logo": "images/Logo-for-Haring-Catfish.png",
+                "logo": "images/Logo-for-Haring-Catfish.webp",
                 "membership": "Silver"
             },
             {
@@ -38,7 +38,7 @@
                 "address": "4198 Front St, Winnsboro, LA 71295",
                 "phone": "318-435-0002",
                 "website": "https://www.facebook.com/profile.php?id=100054544386486",
-                "logo": "images/sanmarcos.jpg",
+                "logo": "images/sanMarcosSmall.webp",
                 "membership": "Bronze"
             },
             {
@@ -46,7 +46,7 @@
                 "address": "4487 Front St Winnsboro, LA 71295",
                 "phone": "318-435-6333",
                 "website": "https://www.lasallecaa.net/",
-                "logo": "images/lasalle.jpg",
+                "logo": "images/lasalle.webp",
                 "membership": "Non Profit"
             },
             {
@@ -54,7 +54,7 @@
                 "address": "241 Norwood Rd, Winnsboro, LA 71295",
                 "phone": "318-439-7277",
                 "website": "https://toad-school-mycology.square.site/",
-                "logo": "images/toadschool.webp",
+                "logo": "images/toadSchool.webp",
                 "membership": "Gold"
             }
         ]

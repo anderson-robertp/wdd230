@@ -153,14 +153,13 @@ header button:hover{
 	display: block;
 }
 .active::before {
-	content: "🦈";  /* just a wayfinding symbol for the user */
+	content: "🦈";  
 }
 main {
   display: grid;
   grid-template-columns: auto;
 }
-/* Your existing styles */
-/* Add styles for dark mode */
+
 .dark-mode {
   background-color: #121212;
   color: white;
@@ -269,6 +268,9 @@ input[name="email"]:invalid {
 .grid img {
   height: 80px;
   width: auto;
+}
+.grid a{
+  text-decoration: none;
 }
 .grid section a:hover {
 	background-color: #1B264F;
