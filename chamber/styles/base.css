@@ -259,7 +259,9 @@ input[name="email"]:invalid {
   text-align: left;
 }
 .grid section {
-  width: 320px;
+  width: auto;
+  min-width: 300px;
+  height: 300px;
   border: 2px solid #121212;
   border-radius: 10px;
   margin: auto;
@@ -268,6 +270,9 @@ input[name="email"]:invalid {
 .grid img {
   height: 80px;
   width: auto;
+}
+.dark .grid a {
+  color: white;
 }
 .grid a{
   text-decoration: none;

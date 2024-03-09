@@ -84,4 +84,7 @@
     #lastModified {
         grid-column: 1/4;
     }
+    .grid section {
+        min-width: 200px;
+    }
 }
