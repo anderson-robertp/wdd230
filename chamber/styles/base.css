@@ -235,6 +235,62 @@ input[name="email"]:required:valid {
 input[name="email"]:invalid {
 	background-color: #ffeeee;
 }
+.directory {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#toggle {
+  background-color: #07BEB8;
+  height: 100px;
+  align-items: center;
+  
+}
+#toggle button {
+  height: 60px;
+  width: 60px;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 5px;
+  align-items: center;
+  text-align: left;
+}
+.grid section {
+  width: 320px;
+  border: 2px solid #121212;
+  border-radius: 10px;
+  margin: auto;
+  padding: 1rem;
+}
+.grid img {
+  height: 80px;
+  width: auto;
+}
+.grid section a:hover {
+	background-color: #1B264F;
+	color: #FB3640;
+	font-weight: 700;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+}
+.list section{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+.list img{
+  display: none;
+}
+.list section:nth-child(even) {
+	background-color: #07BEB8;
+}
 footer {
   background: #1B264F;
   color: white;

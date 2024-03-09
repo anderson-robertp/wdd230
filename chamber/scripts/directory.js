@@ -4,6 +4,10 @@ const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
 
+gridbutton.addEventListener("click", showGrid);
+
+listbutton.addEventListener("click", showList);
+
 getLinks(URL);
 
 async function getLinks(URL) {
@@ -40,11 +44,12 @@ function displayMembers(members) {
         // create section element
         section = document.createElement('section')
         // append all items to section
+        section.appendChild(imgLogo);
         section.appendChild(h3);
         section.appendChild(pAddress);
         section.appendChild(pPhone);
         section.appendChild(aWeb);
-        section.appendChild(imgLogo);
+        
         section.appendChild(pLevel);
         // append section to article
         display.appendChild(section);
