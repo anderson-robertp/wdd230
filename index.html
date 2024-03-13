@@ -74,8 +74,11 @@
         </section>
         <section class="infocard">
             <h3>Information</h3>
-            <p>Location</p>
-            <p>Weather</p>
+            <div id="weather-card">
+                <h4>Weather</h4>
+                <p>The temperature in Monroe, LA USA is currently <span id="temp"></span> with a humidity of <span id="humid"></span>. <br>The current weather conditions are;</p>
+
+            </div>
             <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
         </section>
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d868447.2234530003!2d-92.34707775219599!3d31.760339290159813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1706234148766!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="map-of-North-Louisiana"></iframe>
@@ -91,5 +94,6 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/visitCounter.js"></script>
     <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
