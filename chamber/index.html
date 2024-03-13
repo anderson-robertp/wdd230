@@ -70,9 +70,14 @@
                     <img src="images/weather.webp" alt="lady with umbrella in rain">
                 </picture>
                 <div id="weatherinfo">
-                    <p>Temperature: <span id="temperature">44</span> &deg;F</p>
+                    <h4>Current Conditions</h4>
+                    <p>Temperature: <span id="temperature">44</span></p>
+                    <p>Humidity: <span id="humid"></span></p>
                     <p>Wind Speed: <span id="windSpeed">13.6</span> m/s</p>
                     <p>Wind Chill: <span id="windChill">--</span> &deg;F</p>
+                </div>
+                <div id="threedays">
+                    <h4>The Next Three Days:</h4>
                 </div>
             </div>
         </section>
@@ -103,6 +108,7 @@
     </footer>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/weather.js"></script>
     <script src="scripts/windchill.js"></script>
 </body>
 </html>
