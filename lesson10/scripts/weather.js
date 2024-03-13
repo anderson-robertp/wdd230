@@ -32,7 +32,7 @@ function displayResults(data) {
         var weatherIcon = document.createElement("img");
         const icon = event.icon;
         //console.log(icon)
-        const iconsrc = `https://openweathermap.org/img/w/${icon}.png`;
+        const iconsrc = `https://openweathermap.org/img/wn/${icon}@2x.png`;
         let desc = event.description;
         fL = desc.charAt(0).toUpperCase();
         rest = desc.substring(1);
