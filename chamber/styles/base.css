@@ -158,6 +158,7 @@ header button:hover{
 main {
   display: grid;
   grid-template-columns: auto;
+  column-gap: 20px;
 }
 
 .dark-mode {
@@ -227,12 +228,23 @@ main section {
   width: 450px;
   height: auto;
 }
+input {
+  size: auto;
+}
 input[name="email"]:required:valid {
 	background-color: #bed;
 }
 
 input[name="email"]:invalid {
 	background-color: #ffeeee;
+}
+#joinform {
+  display: flex;
+  flex-direction: column;
+}
+#joinform label {
+  margin-bottom: 10px;
+  width: auto;
 }
 .directory {
   display: flex;

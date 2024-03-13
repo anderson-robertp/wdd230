@@ -52,25 +52,25 @@
             <p id="formalert"> </p>
             <form action="thankyou.html" method="get" id="joinform">
                 <!-- applicant's first name, text type, required, name, and id-->
-                <label for="fname">First Name: <input type="text" id="fname" name="fname" size="38" required placeholder="ex: John" autofocus></label><br>
+                <label for="fname">First Name: <input type="text" id="fname" name="fname" size="38" required placeholder="ex: John" autofocus></label>
                 <!-- applicant's last name, text type, required, name, and id-->
-                <label for="lname">Last Name: <input type="text" id="lname" name="lname" size="38" required placeholder="ex: Smith"></label><br>
+                <label for="lname">Last Name: <input type="text" id="lname" name="lname" size="38" required placeholder="ex: Smith"></label>
                 <!-- applicant's title or position within their organization, text type, name, id, required, and pattern to only accept alpha characters, hyphens, and spaces with a minimum of seven characters using a regular expression -->
-                <label for="position">Title: <input type="text" name="position" id="position" required pattern="^[a-zA-Z\-s]{7,}$" size="45" placeholder="ex: CEO"></label><br>
+                <label for="position">Title: <input type="text" name="position" id="position" required pattern="^[a-zA-Z\-s]{7,}$" size="45" placeholder="ex: CEO"></label>
                 <!-- email address, email type, required, name, id, and placeholder which contains an example email input.-->
-                <label for="email">Email: <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" size="38" placeholder="username@domain.com" title="A valid email address." required></label><br>
+                <label for="email">Email: <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" size="38" placeholder="username@domain.com" title="A valid email address." required></label>
                 <!-- mobile phone number, telephone type, required, name, and id.-->
-                <label for="mobile">Mobile Phone Number: <input type="tel" name="mobile" id="mobile" required placeholder="1235556789"></label><br>
+                <label for="mobile">Mobile Phone Number: <input type="tel" name="mobile" id="mobile" required placeholder="1235556789"></label>
                 <!-- business/organization's name, text type, required, name, and id.-->
-                <label for="org">Business / Organization Name: <input name="org" type="text" id="org" size="50" required></label><br>
+                <label for="org">Business / Organization Name: <input name="org" type="text" id="org" size="50" required></label>
                 <!-- membership level-->
-                <label for="level">Memebrship Level:</label><br>
-                <label for="np"><input type="radio" id="np" name="level" value="NP"> Non Profit Membership</label><br>
-                <label><input type="radio" id="bronze" name="level" value="Bronze"> Bronze Membership</label><br>
-                <label><input type="radio" id="silver" name="level" value="Silver"> Silver Membership</label><br>
-                <label><input type="radio" id="gold" name="level" value="Gold"> Gold Membership</label><br>
+                <label for="level">Memebrship Level:</label>
+                <label for="np"><input type="radio" id="np" name="level" value="NP"> Non Profit Membership</label>
+                <label><input type="radio" id="bronze" name="level" value="Bronze"> Bronze Membership</label>
+                <label><input type="radio" id="silver" name="level" value="Silver"> Silver Membership</label>
+                <label><input type="radio" id="gold" name="level" value="Gold"> Gold Membership</label>
                 <!-- business/organization's description, text area, name, and id.-->
-                <label for="about">Tell us about your organization...<textarea name="about" id="about" cols="50" rows="10"></textarea></label><br>
+                <label for="about">Tell us about your organization...<textarea name="about" id="about" cols="50" rows="10"></textarea></label>
                 <!-- hidden date-->
                 <input type="hidden" name="subdate" id="subdate" value="" placeholder="YYYY-MM-DD">
                 <!-- submission button with type submit-->
