@@ -67,14 +67,18 @@
             <h3>Weather</h3>
             <div class="weather-container">
                 <picture>
-                    <img src="images/weather.webp" alt="lady with umbrella in rain">
+                    <img id="weather-picture" src="images/weather.webp" alt="lady with umbrella in rain">
                 </picture>
                 <div id="weatherinfo">
-                    <h4>Current Conditions</h4>
-                    <p>Temperature: <span id="temperature">44</span></p>
-                    <p>Humidity: <span id="humid"></span></p>
-                    <p>Wind Speed: <span id="windSpeed">13.6</span> m/s</p>
-                    <p>Wind Chill: <span id="windChill">--</span> &deg;F</p>
+                    <h4>Current Conditions for Winnsboro,LA,USA</h4>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <p>Temperature: <span id="temperature"></span>&deg;F</p>
+                    <p>Humidity: <span id="humid"></span>&#37;</p>
+                    <p>Wind Speed: <span id="windSpeed"></span> mph</p>
+                    <p id="chill">Wind Chill: <span id="windChill">--</span> &deg;F</p>
                 </div>
                 <div id="threedays">
                     <h4>The Next Three Days:</h4>

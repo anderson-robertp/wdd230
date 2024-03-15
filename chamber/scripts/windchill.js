@@ -1,4 +1,6 @@
 // Function to calculate wind chill
+chill = document.getElementById('windChill')
+//pChill = document.getElementById('chill')
 
 function calculateWindChill(temperature, windSpeed) {
     
@@ -18,7 +20,8 @@ function calculateWindChill(temperature, windSpeed) {
 // Get temp and wind chill from document
 let temperature = document.getElementById('temperature').textContent
 let windSpeed = document.getElementById('windSpeed').textContent
+//console.log(`Temp: ${temperature} Wind: ${windSpeed}`)
 
 //calculate windchiull and return to document
 let windChill = calculateWindChill(temperature, windSpeed);
-document.getElementById('windChill').textContent = windChill;
+chill.textContent = windChill;
