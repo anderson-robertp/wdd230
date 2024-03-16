@@ -203,6 +203,9 @@ main section {
   color: black;
   align-items: center;
 }
+#threedays {
+  display: flex;
+}
 .discoverCards{
   display: grid;
   grid-template-columns: 1fr;
