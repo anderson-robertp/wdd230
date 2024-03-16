@@ -204,7 +204,11 @@ main section {
   align-items: center;
 }
 #threedays {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#threedays h4 {
+  grid-column: 1/4;
 }
 .discoverCards{
   display: grid;

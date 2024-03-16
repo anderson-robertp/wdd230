@@ -4,6 +4,7 @@ const wind = document.querySelector('#windSpeed')
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption')
 const eventSection = document.querySelector('#weather-card')
+const threeFore = document.querySelector('#threedays')
 const daysOfWeek = [
     'Sunday',
     'Monday',
@@ -112,34 +113,57 @@ function displayThreeDay(data) {
                 high: entry.main.temp_max,
                 desc: entry.weather[0].description,
                 icon: entry.weather[0].icon,
-                //
+                
             }
+            //console.log(`day: ${entryDay}; low: ${entry.main.temp_min}high: ${entry.main.temp_max},desc: ${entry.weather[0].description};icon: ${entry.weather[0].icon}`)
         } else {
-            if(entryDay.temp_min < conData[entryDay].low) {
-                conData[entryDay].low = entryDay.temp_min
+            //console.log(`${i} ${entry.main.temp_min}`);
+            if(entry.main.temp_min < conData[entryDay].low) {
+                conData[entryDay].low = entry.main.temp_min
+                //console.log(`Low Comp${entryDay}: List:${entry.main.temp_min} vs Consolidated:${conData[entryDay].low}`)
             }
-            if (entryDay.temp_max > conData[entryDay].high){
-                conData[entryDay].high = entryDay.temp_max
+            if (entry.main.temp_max > conData[entryDay].high){
+                conData[entryDay].high = entry.main.temp_max
+                //console.log(`High Comp${entryDay}: List:${entry.main.temp_max} vs Consolidated:${conData[entryDay].high}`)
             }
         }
         
     }
 
-    console.log(conData);
+    //console.log(conData);
 
     let first = 1
     for (const indexDay in conData){
         if (first == 1 || first == 5) {
             first++;
-            console.log(first)
+            //console.log(first)
             continue;
         } else {
             const tempHigh = conData[indexDay].high;
             const tempLow = conData[indexDay].low;
             const foreDesc = conData[indexDay].desc;
             const foreIcon = conData[indexDay].icon;
-            
-            console.log(`${first} + ${indexDay} + ${tempHigh} + ${tempLow} + ${foreDesc} + ${foreIcon}`)
+            const section = document.createElement('section');
+            const header = document.createElement('h4');
+            const p = document.createElement('p');
+            const fig = document.createElement('figure');
+            const captionDesc = document.createElement('figcaption');
+            var weatherIcon = document.createElement("img");
+            const iconsrc = `https://openweathermap.org/img/wn/${foreIcon}.png`;
+            header.textContent = indexDay;
+            p.innerHTML = `High: ${tempHigh.toFixed(0)}&deg;F<br>Low: ${tempLow.toFixed(0)}&deg;F`;
+            fL = foreDesc.charAt(0).toUpperCase();
+            rest = foreDesc.substring(1);
+            weatherIcon.setAttribute('src',iconsrc);
+            weatherIcon.setAttribute('alt', foreDesc);
+            captionDesc.textContent = `${fL}${rest}`;
+            fig.appendChild(weatherIcon);
+            fig.appendChild(captionDesc);
+            section.appendChild(header);
+            section.appendChild(p);
+            section.appendChild(fig);
+            //console.log(`${first} + ${indexDay} + ${tempHigh} + ${tempLow} + ${foreDesc} + ${foreIcon}`)
+            threeFore.appendChild(section);
         }
         first++
 
