@@ -26,21 +26,27 @@
     <title>Franklin Parish Chamber of Commerce - WDD 230 - Web Frontend Development</title>
 </head>
 <body>
-    <header>
-        <div id="mode">
-            <label class="switch">
-                <input type="checkbox" id="darkModeToggle">
-                <span class="slider round"></span>
-                    <span class="sun-icon">&#9728;</span>
-                    <span class="moon-icon">&#9790;</span>
-            </label>
+    <div class="banner">
+        <div class="banner-content">
+            <p><strong>Please join us for the Chamber of Commerce Meet and Greet this Wednesday at 6 pm.</strong></p>
         </div>
+        <button class="banner_close" type="button">❎</button>
+    </div>
+    <header>
         <script src="scripts/darkmode.js"></script>
         <div id="head"><img src="images/just_icon_50.png" alt="franklin chamber logo"></div>
         <div id="title">
             <h1>Franklin Parish<br>Chamber of Commerce</h1>
         </div>
-        </header>
+    </header>
+    <div id="mode">
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider round"></span>
+                <span class="sun-icon">&#9728;</span>
+                <span class="moon-icon">&#9790;</span>
+        </label>
+    </div>
     <button id="menu"></button>
     <nav class="navigation">
         <a href="#" class="active">Home</a>
@@ -114,5 +120,6 @@
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/close.js"></script>
 </body>
 </html>

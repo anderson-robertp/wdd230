@@ -7,8 +7,7 @@
         font-size: larger;
     }
     #mode {
-        top: 16rem;
-        right: 4rem;
+        left: 600px;
     }
     .navigation{
         display: flex;

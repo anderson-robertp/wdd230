@@ -3,7 +3,7 @@
         flex-direction: row;
     }
     #mode {
-        top: 17rem;
+        left: 320px;
     }
     #title{
         position: relative;
