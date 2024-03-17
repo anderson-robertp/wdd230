@@ -271,9 +271,9 @@ h4 {
   width: 450px;
   height: auto;
 }
-input {
+/*input {
   size: auto;
-}
+}*/
 input[name="email"]:required:valid {
 	background-color: #bed;
 }
@@ -369,6 +369,6 @@ footer {
       opacity: 0;
   }
   100%{
-      opacity: 100;
+      opacity: 50;
   }
 }
