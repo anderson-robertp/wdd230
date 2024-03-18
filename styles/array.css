@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+    background-color: greenyellow;
+    padding: 1rem;
+}
+#workspace {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+}
+#workspace div{
+    padding: 1rem;
+}
+ul li{
+    font-size: larger;
+}
