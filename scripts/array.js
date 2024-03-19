@@ -13,6 +13,7 @@ const cReduceResult = document.querySelector('#c-reduce-result-list');
 
 // Declare an Array
 const ships = ['Enterprise','Galactica','Serenity','Millennium Falcon','Rocinante','Outlaw Star','Discovery','Heart of Gold','Nostromo'];
+
 const cShips = [
     {id:1,name:'Enterprise',franchise:'Star Trek'},
     {id:2,name:'Voyager',franchise:'Star Trek'},
@@ -31,7 +32,7 @@ const cShips = [
 
 // Map
 let mapResultShips = ships.map(function(ship) {
-    return ship.toUpperCase();
+    return ship.toLowerCase();
 })
 
 // Map a little more complicated
@@ -61,8 +62,26 @@ const numbers = [4,8,15,16,23,42]
 
 let sum = numbers.reduce(function(total,current){
     return total+current;
-},0);
+},100);
 
+// Not another reduce example
+
+const transactions = [
+    {amount:400,type:'credit'},
+    {amount:80,type:'debit'},
+    {amount:150,type:'credit'},
+    {amount:160,type:'debit'},
+    {amount:230,type:'debit'},
+    {amount:420,type:'credit'}
+]
+
+const transactionResult = transactions.reduce(function(balance,transaction) {
+    if (transaction.type === 'debit'){
+        return balance - transaction.amount;
+    } else {
+        return balance + transaction.amount;
+    }
+},1200);
 
 
 // Display for website
@@ -119,3 +138,13 @@ numbers.forEach(num => {
 const sumLi = document.createElement('li');
 sumLi.textContent=sum.toString();
 reduceResult.appendChild(sumLi);
+
+transactions.forEach(transaction => {
+    const li = document.createElement('li');
+    li.textContent=`${transaction.type}: ${transaction.amount}`;
+    cReduceList.appendChild(li);
+});
+
+const resultLi  = document.createElement('li');
+resultLi.textContent = transactionResult.toString();
+cReduceResult.appendChild(resultLi);
