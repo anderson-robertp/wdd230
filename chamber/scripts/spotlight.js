@@ -10,7 +10,7 @@ getLinks(URL).then(
 async function getLinks(URL) {
     const response = await fetch(URL);
     const data = await response.json();
-    console.table(data.members.chamberMembers);
+    //console.table(data.members.chamberMembers);
     //displayMembers(data.members.chamberMembers);
     return data.members.chamberMembers;
 }
@@ -18,7 +18,7 @@ async function getLinks(URL) {
 function displayMembers(data) {
     // make array of gold and non profit members
     let goldNP = data.filter(function(member){
-        console.log(member)
+        //console.log(member)
         if (member.membership == 'Gold'){
             return member
         } else {
@@ -27,7 +27,7 @@ function displayMembers(data) {
             }
         }
     });
-    console.table(goldNP)
+    //console.table(goldNP)
     goldNP.forEach(member => {
         //make h4 element
         const h4 = document.createElement('h4');

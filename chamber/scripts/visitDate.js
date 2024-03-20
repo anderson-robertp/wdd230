@@ -2,14 +2,14 @@
 const dateDisp = document.querySelector("#date");
 
 let today = new Date();
-console.log('today: '+ today);
+//console.log('today: '+ today);
 
 let lastVisit = new Date(window.localStorage.getItem("dateVisit-ls")) || 0;
 /*let lastVisit = today - (4 * 86400000)*/
-console.log('last visit: ' + lastVisit)
+//console.log('last visit: ' + lastVisit)
 
 let sinceLastVisit = today.getTime() - lastVisit;
-console.log('Since last visit: ' + sinceLastVisit)
+//console.log('Since last visit: ' + sinceLastVisit)
 
 if (sinceLastVisit  <= 86400000) {
     dateDisp.textContent = 'Back so soon! Awesome!';
