@@ -42,6 +42,17 @@
     #member {
         grid-column: 1;
     }
+    .discPic {
+        padding: .5rem;
+        margin: auto;
+    }
+    .discPic img {
+        
+        max-width: 1000px;
+    }
+    .discPic img:hover{
+        box-shadow: 0 0 50px #333;
+    }
     #calenderSection {
         grid-column: 1;
     }
