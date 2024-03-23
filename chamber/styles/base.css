@@ -202,6 +202,24 @@ main img {
   background: black;
   animation: fade 2s;
 }
+#join-button {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  padding: 2px;
+  
+  text-align: center;
+  text-decoration: none;
+  font-size: large;
+  
+}
+#join-button button {
+  background-color: #07BEB8;
+  border: none;
+  border-radius: 5px;
+  font-size: larger;
+  padding: 10px;
+}
 main section {
   /*margin: auto;*/
   padding: 1px;
@@ -270,8 +288,8 @@ picture{
   grid-template-columns: 1fr;
 }*/
 .discoverCards section {
-  width: 450px;
-  height: 460px;
+  width: 350px;
+  height: auto;
   padding: .5rem;
 }
 .discPic {
@@ -290,11 +308,12 @@ picture{
   top: 20px;
   left: 70px
 }
-
-#calender {
-  
-  width: 450px;
-  height: auto;
+#calenderSection {
+  height: 400px;
+}
+#calenderSection iframe {
+  width: 340px;
+  height: 300px;
 }
 /*input {
   size: auto;

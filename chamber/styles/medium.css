@@ -38,6 +38,10 @@
     .hero img {
         object-fit: cover;
     }
+    #join-button {
+        top: 50px;
+        left: 50px;
+    }
     #spotlight{
         grid-column: 1/3;
     }
