@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta 
     name="description" 
-    content="Here is the course assignment portal for Robert Anderson to
+    content="Ths is the Join page for the Franklin Parish chamber of commerce. This is a course assignment for Robert Anderson to
     display his work for the WDD 230 - Web Frontend Development class.">
     <meta name="author" content="Robert Anderson">
     <!-- Social Meta Expressions -->
@@ -20,12 +20,12 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
-    <title>Franklin Parish Chamber of Commerce - WDD 230 - Web Frontend Development</title>
+    <title>Join the Franklin Parish Chamber of Commerce - WDD 230 - Web Frontend Development</title>
 </head>
 <body>
     <header>
         <script src="scripts/darkmode.js"></script>
-        <div id="head"><img src="images/just_icon_50.png" alt="franklin chamber logo"></div>
+        <div id="head"><a href="index.html"><img src="images/just_icon_50.png" alt="franklin chamber logo"></a></div>
         <div id="title">
             <h1>Franklin Parish<br>Chamber of Commerce</h1>
         </div>
@@ -64,7 +64,7 @@
                 <!-- business/organization's name, text type, required, name, and id.-->
                 <label for="org">Business / Organization Name: <input name="org" type="text" id="org" size="50" required></label>
                 <!-- membership level-->
-                <label for="level">Memebrship Level:</label>
+                <label>Membership Level:</label>
                 <label for="np"><input type="radio" id="np" name="level" value="NP"> Non Profit Membership</label>
                 <label><input type="radio" id="bronze" name="level" value="Bronze"> Bronze Membership</label>
                 <label><input type="radio" id="silver" name="level" value="Silver"> Silver Membership</label>
@@ -72,7 +72,7 @@
                 <!-- business/organization's description, text area, name, and id.-->
                 <label for="about">Tell us about your organization...<textarea name="about" id="about" cols="50" rows="10"></textarea></label>
                 <!-- hidden date-->
-                <input type="hidden" name="subdate" id="subdate" value="" placeholder="YYYY-MM-DD">
+                <input type="hidden" name="subdate" id="subdate" value="">
                 <!-- submission button with type submit-->
                 <input type="submit" value="Submit">
             </form>

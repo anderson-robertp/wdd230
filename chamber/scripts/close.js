@@ -2,7 +2,7 @@ const banner = document.querySelector(".banner")
 const button = document.querySelector(".banner_close")
 const date = new Date();
 const today = date.getDay();
-console.log(`date:${date} today:${today}`)
+//console.log(`date:${date} today:${today}`)
 
 button.addEventListener("click", function() {
     this.closest(".banner").style.display = "none"

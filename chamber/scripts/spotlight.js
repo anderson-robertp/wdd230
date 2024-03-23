@@ -22,12 +22,25 @@ function displayMembers(data) {
         if (member.membership == 'Gold'){
             return member
         } else {
-            if (member.membership == 'Non Profit') {
+            if (member.membership == 'Silver') {
                 return member
             }
         }
     });
     //console.table(goldNP)
+    // Pick a random to spotlight
+    let randSpot = goldNP.filter(function(member){
+        let rand1 = Math.floor(Math.random()*goldNP.length())
+        let rand2 = rand1;
+        while (rand2 == rand1) {
+            rand2 = Math.floor(Math.random()*goldNP.length())
+        }
+        let rand3 = rand2
+        while (rand3 == rand2 || rand3 == rand1){
+            rand3 = Math.floor(Math.random()*goldNP.length())
+        }
+        console.log(`1:${rand1} 2:${rand2} 3:${rand3}`)
+    });
     goldNP.forEach(member => {
         //make h4 element
         const h4 = document.createElement('h4');
