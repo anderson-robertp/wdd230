@@ -47,6 +47,9 @@
     #member {
         grid-column: 1;
     }
+    .discPic {
+        height: 460px;
+    }
     .discPic img:hover{
         box-shadow: 0 0 50px #333;
         transform: scale(1.1);
