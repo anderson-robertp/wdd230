@@ -29,19 +29,19 @@ function displayMembers(data) {
     });
     //console.table(goldNP)
     // Pick a random to spotlight
-    let randSpot = goldNP.filter(function(member){
-        let rand1 = Math.floor(Math.random()*goldNP.length())
+    let rand1 = Math.floor(Math.random()*goldNP.length)
         let rand2 = rand1;
         while (rand2 == rand1) {
-            rand2 = Math.floor(Math.random()*goldNP.length())
+            rand2 = Math.floor(Math.random()*goldNP.length)
         }
         let rand3 = rand2
         while (rand3 == rand2 || rand3 == rand1){
-            rand3 = Math.floor(Math.random()*goldNP.length())
+            rand3 = Math.floor(Math.random()*goldNP.length)
         }
-        console.log(`1:${rand1} 2:${rand2} 3:${rand3}`)
-    });
-    goldNP.forEach(member => {
+        //console.log(`1:${rand1} 2:${rand2} 3:${rand3}`)
+    let randSpot = [goldNP[rand1],goldNP[rand2],goldNP[rand3]]
+
+    randSpot.forEach(member => {
         //make h4 element
         const h4 = document.createElement('h4');
         h4.textContent = member.name
@@ -58,16 +58,18 @@ function displayMembers(data) {
         aWeb.href = member.website;
         aWeb.textContent = member.website;
         // create img element
+        var picLogo = document.createElement('picture')
         var imgLogo = document.createElement('img');
         // add attributes to img
         imgLogo.setAttribute('src',member.logo)
         imgLogo.setAttribute('alt',`logo of ${member.name}`)
         imgLogo.setAttribute('loading','lazy')
+        picLogo.appendChild(imgLogo)
         // create section element
         section = document.createElement('section')
         // append all items to section
-        section.appendChild(imgLogo);
         section.appendChild(h4);
+        section.appendChild(picLogo);
         section.appendChild(pAddress);
         section.appendChild(pPhone);
         section.appendChild(aWeb);

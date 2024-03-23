@@ -35,7 +35,8 @@ function displayMembers(members) {
         // add attribtes
         aWeb.href = member.website;
         aWeb.textContent = member.website;
-        // create img element
+        // create PICTURE AND img element
+        var picLogo = document.createElement('picture')
         var imgLogo = document.createElement('img');
         // add attributes to img
         imgLogo.setAttribute('src',member.logo)
@@ -44,7 +45,8 @@ function displayMembers(members) {
         // create section element
         section = document.createElement('section')
         // append all items to section
-        section.appendChild(imgLogo);
+        picLogo.appendChild(imgLogo);
+        section.appendChild(picLogo);
         section.appendChild(h3);
         section.appendChild(pAddress);
         section.appendChild(pPhone);
