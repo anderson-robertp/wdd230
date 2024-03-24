@@ -1,0 +1,19 @@
+/* colors: https://coolors.co/palette/f72585-7209b7-3a0ca3-4361ee-4cc9f0 */
+
+body {
+
+}
+header {
+    background-color: #F72585;
+}
+nav{
+    background-color: #7209B7;
+    color: white;
+}
+nav a{
+
+}
+footer{
+    background-color: #3A0CA3;
+    color: white;
+}
