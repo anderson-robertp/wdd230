@@ -24,14 +24,7 @@
 <body>
     <header>
         <!--Closable banner with the temp-max displayed-->
-        <div id='mode'>
-            <label class='switch'>
-                <input type='checkbox' id='darkModeToggle'>
-                <span class='slider round'></span>
-                <span class='sun-icon'>&#9728;</span>
-                <span class='moon-icon'>&#9790;</span>
-            </label>
-        </div>
+        
         <script src='scripts/darkmode.js'></script>
         <div class="logo">
             <picture>
@@ -48,8 +41,16 @@
         <a href='contact.html'>Contact Us</a>
         </div>
     </header>
+    <div id='mode'>
+        <label class='switch'>
+            <input type='checkbox' id='darkModeToggle'>
+            <span class='slider round'></span>
+            <span class='sun-icon'>&#9728;</span>
+            <span class='moon-icon'>&#128526;</span>
+        </label>
+    </div>
     <button id='menu'></button>
-    <nav class='navigation'>
+    <nav class='mobile-navigation'>
         <a href='index.html'>Home</a>
         <a href='rentals.html'>Rentals</a>
         <a href='reservations.html'>Reservations</a>
@@ -60,7 +61,8 @@
         <!--Pictures of the island-->
         <div class="hero">
             <picture>
-
+                <source srcset="images/hero-mobile.webp" media="(max-width: 800px)">
+                <img src="images/hero-large.webp" loading="lazy">
             </picture>
         </div>
         <!--CAll to action for reservation-->
