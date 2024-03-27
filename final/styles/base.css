@@ -6,6 +6,10 @@ body {
 header {
     background-color: #F72585;
 }
+.logo picture img {
+    max-width: 150px;
+    height: auto;
+}
 nav{
     background-color: #7209B7;
     color: white;
