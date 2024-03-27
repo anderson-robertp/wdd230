@@ -2,44 +2,92 @@
     "vehicles":{
         "scooters":[
             {
-                "make":"",
-                "model":"",
-                "capacity":"",
-                "rate":""
+                "make":"Honda",
+                "model":"Metropolitan",
+                "specs":"49cc",
+                "capacity":"1",
+                "reserve":[
+                    {"Half Day(3hrs)":"$20"},
+                    {"Full Day":"$30"}
+                ],
+                "walk-in":[
+                    {"Half Day(3hrs)":"$25"},
+                    {"Full Day":"$35"}
+                ]
             },
             {
-                "make":"",
-                "model":"",
-                "capacity":"",
-                "rate":""
+                "make":"Honda",
+                "model":"Dio",
+                "specs":"110cc",
+                "capacity":"2",
+                "reserve":[
+                    {"Half Day(3hrs)":"$30"},
+                    {"Full Day":"$40"}
+                ],
+                "walk-in":[
+                    {"Half Day(3hrs)":"$35"},
+                    {"Full Day":"$45"}
+                ]
             },
             {
-                "make":"",
-                "model":"",
-                "capacity":"",
-                "rate":""
+                "make":"Honda",
+                "model":"PCX150",
+                "specs":"149cc",
+                "capacity":"3",
+                "reserve":[
+                    {"Half Day(3hrs)":"$40"},
+                    {"Full Day":"$50"}
+                ],
+                "walk-in":[
+                    {"Half Day(3hrs)":"$45"},
+                    {"Full Day":"$55"}
+                ]
             }
         ],
         "atvs":[
             {
-                "make":"",
-                "model":"",
-                "capacity":"",
-                "rate":""
+                "make":"Honda",
+                "model":"Pioneer",
+                "specs":"1000",
+                "capacity":"4",
+                "reserve":[
+                    {"Half Day(3hrs)":"$50"},
+                    {"Full Day":"$70"}
+                ],
+                "walk-in":[
+                    {"Half Day(3hrs)":"$60"},
+                    {"Full Day":"$80"}
+                ]
             }
         ],
         "jeeps":[
             {
-                "make":"",
-                "model":"",
-                "capacity":"",
-                "rate":""
+                "make":"Jeep",
+                "model":"Wrangler",
+                "specs":"4 door manuel with A/C",
+                "capacity":"5",
+                "reserve":[
+                    {"Half Day(3hrs)":"$70"},
+                    {"Full Day":"$100"}
+                ],
+                "walk-in":[
+                    {"Half Day(3hrs)":"$85"},
+                    {"Full Day":"$125"}
+                ]
             },
             {
-                "make":"",
-                "model":"",
-                "capacity":"",
-                "rate":""
+                "make":"Jeep",
+                "model":"Wrangler",
+                "specs":"2 door - open air - manuel",
+                "capacity":"4",
+                "reserve":[
+                    {"Half Day(3hrs)":"$60"},
+                    {"Full Day":"$85"}
+                ],
+                "walk-in":[
+                    {"Half Day(3hrs)":"$70"},
+                    {"Full Day":"$90"}
+                ]
             }
         ]
     }
