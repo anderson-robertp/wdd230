@@ -24,12 +24,17 @@
 <body>
     <header>
         <!--Closable banner with the temp-max displayed-->
-        
+        <div class="banner">
+            <div class="banner-content">
+                <p><strong>High temps</strong></p>
+            </div>
+            <button class="banner_close" type="button">❎</button>
+        </div>
         <script src='scripts/darkmode.js'></script>
         <div class="logo">
-            <picture>
-                <img src="images/logo.png">
-            </picture>
+            <div id="head">
+                <a href="index.html"><img src="images/logo.png"></a>
+            </div>   
             <h1>
                 ~Scoots~<br>Scooter Rental
             </h1>
@@ -68,10 +73,31 @@
         <!--CAll to action for reservation-->
 
         <!--sUMMERY OF ALL THE RENTALS-->
+        <div class="rental-card">
+            <h2>
+                Rental Summery
+            </h2>
+            <p>
+                Summery of all rentals
+            </p>
+        </div>
+        <div class="island-pic">
+            <picture>
 
+            </picture>
+        </div>
         <!--wEATHER INFO i.e. current temp, hunmidity, next day forecast at 1500-->
-        
+        <div class="weather-card">
+            <h2>Weather</h2>
+            <h3>Title</h3>
+            <p>Picture and Desccription</p>
+        </div>
         <!--Including title,desc,and icon-->
+        <div class="island-pic">
+            <picture>
+                
+            </picture>
+        </div>
     </main>
     <footer>
         <p>&#169; <span id='year'>????</span></p>
