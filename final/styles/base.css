@@ -1,8 +1,8 @@
 /* colors: https://coolors.co/palette/f72585-7209b7-3a0ca3-4361ee-4cc9f0 */
 
-body {
+/*body {
 
-}
+}*/
 header {
     background-color: #4CC9F0;
     display: flex;
@@ -21,11 +21,13 @@ nav{
     background-color: #7209B7;
     color: white;
 }
-nav a{
+/*nav a{
 
-}
+}*/
 .hero picture img {
-    width: 367px;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
 }
 footer{
     background-color: #3A0CA3;
