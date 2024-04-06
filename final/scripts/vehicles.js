@@ -4,14 +4,16 @@ const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const tablebutton = document.querySelector("#table");
 const display = document.querySelector("article");
+const table = document.querySelector('#dataTable tbody')
 
 gridbutton.addEventListener("click", showGrid);
 listbutton.addEventListener("click", showList);
 tablebutton.addEventListener("click", showTable);
 
-getVehicles(url).then(
-    function(value){parseData(value)}
-)
+getVehicles(url).then(data => {
+    parseData(data);
+    populateTable(data);
+})
 
 async function getVehicles(link) {
     const response = await fetch(link);
@@ -22,6 +24,25 @@ async function getVehicles(link) {
 
 function parseData(array) {
     console.table(array);
+    const scooters = array.vehicles.scooters
+    const atvs = array.vehicles.atvs
+    const jeeps = array.vehicles.jeeps
+    console.table(scooters);
+}
+
+function populateTable(array) {
+    console.table(array);
+}
+
+function createCards(array) {
+    const make = array.make;
+    const model = array.model;
+    const specs = array.specs;
+    const capacity = array.capacity;
+    const resHalf = array.reserve.'Half Day(3hrs)'
+    const resFull
+    const walkHalf
+    const walkFull
 }
 
 function showList() {
