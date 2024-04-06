@@ -1,6 +1,7 @@
 // 20.496492631914442, -86.94321812736854
 const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=20.49&lon=-86.94&units=imperial&cnt=32&appid=6b753c5b3f206d70be293add3e8903f6'
-const weather = document.querySelector('.weather-card');
+const weather = document.querySelector('#current');
+const forecast = document.querySelector('#forecast')
 const banner = document.querySelector(".banner-content");
 const button = document.querySelector(".banner_close");
 
@@ -38,7 +39,7 @@ function displayWeather(data) {
     weatherBanner(today);
     displayCurrentConditions(today,weather);
     displayConditions(today.weather,weather);
-    displayForecast(data.list,weather);
+    displayForecast(data.list,forecast);
     
 }
 function displayCurrentConditions(today,weather){
@@ -49,8 +50,8 @@ function displayCurrentConditions(today,weather){
     const pTemp = document.createElement('p');
     const pHumid = document.createElement('p');
     const pFeels = document.createElement('p');
-    pTemp.innerHTML = `<strong>Current Temp<br>${temp}</strong><br>;`
-    pHumid.innerHTML = `Current Humidity<br>${humid}<br>`
+    pTemp.innerHTML = `<strong>Temperature<br>${temp}</strong><br>;`
+    pHumid.innerHTML = `Humidity<br>${humid}<br>`
     pFeels.innerHTML = `Feels Like<br>${feels}`
     //console.log(weather)
     weather.appendChild(pTemp);
@@ -58,17 +59,14 @@ function displayCurrentConditions(today,weather){
     weather.appendChild(pFeels);
 }
 
-function displayConditions(data,weather){
+function displayConditions(data,div){
     // title, icon, desc
     //console.table(data);
-    const h3 = document.createElement('h3');
-    h3.textContent = 'Current Conditions';
-    weather.appendChild(h3);
     data.forEach(element => {
        const title = element.main;
        const icon = element.icon;
        const desc = element.description;
-       console.log(`title:${title} icon:${icon} desc:${desc}`)
+       //console.log(`title:${title} icon:${icon} desc:${desc}`)
        const section = document.createElement('section')
        const h4 = document.createElement('h4');
        const fig = document.createElement('figure')
@@ -83,7 +81,8 @@ function displayConditions(data,weather){
        h4.textContent = title;
        section.appendChild(h4);
        section.appendChild(fig)
-       weather.appendChild(section);
+       //console.log(div)
+       div.appendChild(section);
     });
 }
 
@@ -95,15 +94,16 @@ function displayForecast(data,weather) {
     tomorrowDate.setDate(tomorrowDate.getDate() + 1);
     const tomorrowDateString = tomorrowDate.toISOString().split('T')[0];
     //console.log(tomorrowDateString)
-    const forecast = data.filter(function(value){
+    const forecastData = data.filter(function(value){
         if(value.dt_txt.startsWith(tomorrowDateString)){
             if(value.dt_txt.endsWith('15:00:00')){
                 return value;
             }
         }
     });
-    console.table(forecast[0]);
-    displayConditions(forecast[0].weather,weather);
+    //console.table(forecastData[0]);
+    displayCurrentConditions(forecastData[0],forecast)
+    displayConditions(forecastData[0].weather,forecast);
 }
 
 // banner for high temps

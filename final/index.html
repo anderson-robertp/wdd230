@@ -74,34 +74,42 @@
         <!--CAll to action for reservation-->
 
         <!--sUMMERY OF ALL THE RENTALS-->
-        <div class="rental-card">
+        <section class="rental-card">
             <h2>
                 Rental Summery
             </h2>
             <p>
                 <strong>Explore the great outdoors with our wide range of rental options!</strong><br> Whether you're cruising through the city streets or tackling off-road trails, we've got you covered with our selection of scooters, ATVs, and Jeeps. Enjoy the freedom of mobility and adventure with our reliable and well-maintained vehicles. From solo rides to group excursions, our rentals cater to all your needs. Experience convenience, reliability, and excitement – rent with us today!
             </p>
-        </div>
+        </section>
         <div class="island-pic">
             <picture>
-
+                <source srcset="images/scooter-mobile.webp" media="(max-width: 800px)">
+                <img src="images/scooter-large.webp">
             </picture>
         </div>
         <!--wEATHER INFO i.e. current temp, hunmidity, next day forecast at 1500-->
-        <div class="weather-card">
+        <section class="weather-card">
             <h2>Weather</h2>
-        </div>
+            <div id="current">
+                <h3>Current Conditions</h3>
+            </div>
+            <div id="forecast">
+                <h3>Tomorrow's Forecast</h3>
+            </div>
+        </section>
         <!--Including title,desc,and icon-->
         <div class="island-pic">
             <picture>
-                
+                <source srcset="images/jeep-beach-mobile.webp" media="(max-width: 800px)">
+                <img src="images/jeep-beach-large.webp">
             </picture>
         </div>
-        <div class="faq">
+        <section class="faq">
             <h2>
                 Frequently asked Questions
             </h2>
-        </div>
+        </section>
     </main>
     <footer>
         <p>&#169; <span id='year'>????</span></p>
