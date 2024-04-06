@@ -23,13 +23,6 @@
 </head>
 <body>
     <header>
-        <!--Closable banner with the temp-max displayed-->
-        <div class="banner">
-            <div class="banner-content">
-                <p><strong>High temps</strong></p>
-            </div>
-            <button class="banner_close" type="button">❎</button>
-        </div>
         <script src='scripts/darkmode.js'></script>
         <div class="logo">
             <div id="head">
@@ -65,6 +58,16 @@
     <main>
         <!--Display vehicle in from json-->
         <!--Data table will need to be used in some fashion-->
+        <h2>Rentals</h2>
+        <div id="buttons">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+            <button id="table">Table</button>
+        </div>
+        <hr>
+        <div id="vehicles">
+            <article class="grid"></article>
+        </div>
     </main>
     <footer>
         <p>&#169; <span id='year'>????</span></p>
@@ -73,5 +76,6 @@
         <p>Last Modified: <span id='lastModified'></span></p>
     </footer>
     <script src='scripts/menu.js'></script>
+    <script src="scripts/vehicles.js"></script>
 </body>
 </html>
