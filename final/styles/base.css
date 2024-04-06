@@ -5,10 +5,16 @@
 }*/
 header {
     background-color: #4CC9F0;
+    background-image: url("/final/images/hero-mobile.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    color: white;
+    height: 400px;
 }
 .logo picture img {
     max-width: 150px;
@@ -25,9 +31,7 @@ nav{
 
 }*/
 .hero picture img {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
+    display: none;
 }
 footer{
     background-color: #3A0CA3;
