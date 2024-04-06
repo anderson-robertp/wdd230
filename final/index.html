@@ -25,9 +25,7 @@
     <header>
         <!--Closable banner with the temp-max displayed-->
         <div class="banner">
-            <div class="banner-content">
-                <p><strong>High temps</strong></p>
-            </div>
+            <div class="banner-content"></div>
             <button class="banner_close" type="button">❎</button>
         </div>
         <script src='scripts/darkmode.js'></script>
@@ -44,6 +42,9 @@
         <a href='rentals.html'>Rentals</a>
         <a href='reservations.html'>Reservations</a>
         <a href='contact.html'>Contact Us</a>
+        </div>
+        <div id="header-call">
+            <a href="reservations.html"><button>Rent Your Adventure</button></a>
         </div>
     </header>
     <div id='mode'>
@@ -78,7 +79,7 @@
                 Rental Summery
             </h2>
             <p>
-                Summery of all rentals
+                <strong>Explore the great outdoors with our wide range of rental options!</strong><br> Whether you're cruising through the city streets or tackling off-road trails, we've got you covered with our selection of scooters, ATVs, and Jeeps. Enjoy the freedom of mobility and adventure with our reliable and well-maintained vehicles. From solo rides to group excursions, our rentals cater to all your needs. Experience convenience, reliability, and excitement – rent with us today!
             </p>
         </div>
         <div class="island-pic">
@@ -89,14 +90,17 @@
         <!--wEATHER INFO i.e. current temp, hunmidity, next day forecast at 1500-->
         <div class="weather-card">
             <h2>Weather</h2>
-            <h3>Title</h3>
-            <p>Picture and Desccription</p>
         </div>
         <!--Including title,desc,and icon-->
         <div class="island-pic">
             <picture>
                 
             </picture>
+        </div>
+        <div class="faq">
+            <h2>
+                Frequently asked Questions
+            </h2>
         </div>
     </main>
     <footer>
@@ -105,6 +109,7 @@
         <p id='locale'>Louisiana</p>
         <p>Last Modified: <span id='lastModified'></span></p>
     </footer>
-    <script src='scripts/hamburger.js'></script>
+    <script src='scripts/menu.js'></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
