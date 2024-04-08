@@ -39,10 +39,10 @@ function createCards(array) {
     const model = array.model;
     const specs = array.specs;
     const capacity = array.capacity;
-    const resHalf = array.reserve.'Half Day(3hrs)'
-    const resFull
-    const walkHalf
-    const walkFull
+    const resHalf = array.reserve.resHalf
+    const resFull = array.reserve.resFull
+    const walkHalf = array.reserve.walkHalf
+    const walkFull = array.reserve.walkFull
 }
 
 function showList() {

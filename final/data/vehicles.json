@@ -6,6 +6,7 @@
                 "model":"Metropolitan",
                 "specs":"49cc",
                 "capacity":"1",
+                "pic":"images/honda-metro.webp",
                 "reserve":[
                     {"resHalf":"$20"},
                     {"resFull":"$30"}
@@ -20,6 +21,7 @@
                 "model":"Dio",
                 "specs":"110cc",
                 "capacity":"2",
+                "pic":"images/honda-dio.webp",
                 "reserve":[
                     {"resHalf":"$30"},
                     {"resFull":"$40"}
@@ -34,6 +36,7 @@
                 "model":"PCX150",
                 "specs":"149cc",
                 "capacity":"3",
+                "pic":"images/honda-pcx150.webp",
                 "reserve":[
                     {"resHalf":"$40"},
                     {"resFull":"$50"}
@@ -50,6 +53,7 @@
                 "model":"Pioneer",
                 "specs":"1000",
                 "capacity":"4",
+                "pic":"images/honda-pioneer.webp",
                 "reserve":[
                     {"resHalf":"$50"},
                     {"resFull":"$70"}
@@ -66,6 +70,7 @@
                 "model":"Wrangler",
                 "specs":"4 door manuel with A/C",
                 "capacity":"5",
+                "pic":"images/jeep-wrangler-5.webp",
                 "reserve":[
                     {"resHalf":"$70"},
                     {"resFull":"$100"}
@@ -80,6 +85,7 @@
                 "model":"Wrangler",
                 "specs":"2 door - open air - manuel",
                 "capacity":"4",
+                "pic":"images/jeep-wrangler-4.webp",
                 "reserve":[
                     {"resHalf":"$60"},
                     {"resFull":"$85"}
