@@ -69,14 +69,51 @@
             <h2>
                 Rental Terms
             </h2>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
         </section>
         <!--A valid form date,period,rental type,number,phone #
         name,email,home state or country,cruise line if applicable,and
         special accomadations/comments-->
         <section class="rental-form">
             <h2>
-                Rental Form
+                Reservation Form
             </h2>
+            <div class="form">
+                <form action="thankyou.html">
+                    <!--Date-->
+                    <label for="sdate">When do you want to pick them up? <input type="date" id="sdate" name="sdate" required></label><br>
+                    <!--Period-->
+                    <label for="edate">When are bringing them back? <input type="date" id="edate" name="edate" required></label><br>
+                    <!--Rental Type-->
+                    <label>What do you want to rent? </label>
+                    <!--Quantity-->
+                    <label>How many do you want? </label>
+                    <!--name-->
+                    <label for="name">What's your Name? <input type="text" id="name" for="name" required></label>
+                    <!--Phone-->
+                    <label for="mobile">What's your number? <input type="tel" name="mobile" id="mobile" required placeholder="1235556789"></label>
+                    <!--email-->
+                    <label for="email">What's your email? <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="username@domain.com" title="A valid email address." required></label>
+                    <!--home state or country-->
+                    <label>Where are you from? <input for="country" type="text" id="country"></label>
+                    <!--Cruise line-->
+                    <label>Cruise: </label>
+                    <!--Comment form-->
+                    <label></label>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </section>
     </main>
     <footer>
