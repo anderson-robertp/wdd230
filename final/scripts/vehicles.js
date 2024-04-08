@@ -32,6 +32,13 @@ function parseData(array) {
 
 function populateTable(array) {
     console.table(array);
+    const make = array.make;
+    const model = array.model;
+    const resHalf = array.reserve.resHalf;
+    const resFull = array.reserve.resFull;
+    const walkHalf = array.walk-in.walkHalf;
+    const walkFull = array.reserve.walkFull;
+    console.log(`${make} ${model} ${resHalf} ${resFull} ${walkHalf} ${walkFull}`)
 }
 
 function createCards(array) {
@@ -39,10 +46,8 @@ function createCards(array) {
     const model = array.model;
     const specs = array.specs;
     const capacity = array.capacity;
-    const resHalf = array.reserve.resHalf
-    const resFull = array.reserve.resFull
-    const walkHalf = array.reserve.walkHalf
-    const walkFull = array.reserve.walkFull
+    const pic = array.pic;
+    
 }
 
 function showList() {

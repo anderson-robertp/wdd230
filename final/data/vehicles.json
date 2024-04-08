@@ -11,7 +11,7 @@
                     {"resHalf":"$20"},
                     {"resFull":"$30"}
                 ],
-                "walk-in":[
+                "walkin":[
                     {"walkHalf":"$25"},
                     {"walkFull":"$35"}
                 ]
@@ -26,7 +26,7 @@
                     {"resHalf":"$30"},
                     {"resFull":"$40"}
                 ],
-                "walk-in":[
+                "walkin":[
                     {"walkHalf":"$35"},
                     {"walkFull":"$45"}
                 ]
@@ -41,7 +41,7 @@
                     {"resHalf":"$40"},
                     {"resFull":"$50"}
                 ],
-                "walk-in":[
+                "walkin":[
                     {"walkHalf":"$45"},
                     {"walkFull":"$55"}
                 ]
@@ -58,7 +58,7 @@
                     {"resHalf":"$50"},
                     {"resFull":"$70"}
                 ],
-                "walk-in":[
+                "walkin":[
                     {"walkHalf":"$60"},
                     {"walkFull":"$80"}
                 ]
@@ -75,7 +75,7 @@
                     {"resHalf":"$70"},
                     {"resFull":"$100"}
                 ],
-                "walk-in":[
+                "walkin":[
                     {"walkHalf":"$85"},
                     {"walkFull":"$125"}
                 ]
@@ -90,7 +90,7 @@
                     {"resHalf":"$60"},
                     {"resFull":"$85"}
                 ],
-                "walk-in":[
+                "walkin":[
                     {"walkHalf":"$70"},
                     {"walkFull":"$90"}
                 ]
