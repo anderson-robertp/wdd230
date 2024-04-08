@@ -96,21 +96,28 @@
                     <!--Period-->
                     <label for="edate">When are bringing them back? <input type="date" id="edate" name="edate" required></label><br>
                     <!--Rental Type-->
-                    <label>What do you want to rent? </label>
+                    <label>What do you want to rent? <select id="rental" for="rental">
+                        <option>Honda Metro Scooter</option>
+                        <option>Honda Dio Scooter</option>
+                        <option>Honda PCX150 Scooter</option>
+                        <option>Honda Pioneer ATV</option>
+                        <option>Jeep Wrangler - 4 door</option>
+                        <option>Jeep Wrangler - 2 door</option>
+                    </select></label><br>
                     <!--Quantity-->
-                    <label>How many do you want? </label>
+                    <label>How many do you want? <input type="number" id="quantity" for="quantity" required></label><br>
                     <!--name-->
-                    <label for="name">What's your Name? <input type="text" id="name" for="name" required></label>
+                    <label for="name">What's your Name? <input type="text" id="name" for="name" required></label><br>
                     <!--Phone-->
-                    <label for="mobile">What's your number? <input type="tel" name="mobile" id="mobile" required placeholder="1235556789"></label>
+                    <label for="mobile">What's your number? <input type="tel" name="mobile" id="mobile" required placeholder="1235556789"></label><br>
                     <!--email-->
-                    <label for="email">What's your email? <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="username@domain.com" title="A valid email address." required></label>
+                    <label for="email">What's your email? <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="username@domain.com" title="A valid email address." required></label><br>
                     <!--home state or country-->
-                    <label>Where are you from? <input for="country" type="text" id="country"></label>
+                    <label>Where are you from? <input for="country" type="text" id="country"></label><br>
                     <!--Cruise line-->
-                    <label>Cruise: </label>
+                    <label>Which Cruise are you a part of? <input type="text" id="cruise" for="cruise"></label><br>
                     <!--Comment form-->
-                    <label></label>
+                    <label>Any special requirements? <textarea name="special" id="special" cols="40" rows="10"></textarea></label><br>
                     <input type="submit" value="Submit">
                 </form>
             </div>
