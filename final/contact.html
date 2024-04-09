@@ -60,22 +60,23 @@
         <!--Essential contact info
         embedded google mapto show the 2 locations
         and a basic form with name email and comment-->
-        <section class="contact">
-            <h3>Address 1</h3>
+        <section class="downtown">
+            <h3>Scoots Downtown</h3>
             <p>Km. 3.5 Prolongación Av. Rafael E. Melgar Lote 37<br> Local 62 Int. Centro Comercial Royal Village,<br> 77675 Cozumel, Q.R., Mexico</p>
-            <h3>Address 2</h3>
-            <p>Av. Rafael E. Melgar 599, Centro, 77600 Cozumel,<br> Q.R., Mexico</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d552.9869692046398!2d-86.97263797146942!3d20.47829535142254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5745f29ef52b%3A0x3317853bd5bac3a6!2sHarley%20Davidson%20Cozumel!5e1!3m2!1sen!2sus!4v1712385431539!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
         </section>
-        <section class="maps">
-            <h3>Store 1</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d552.9869692046398!2d-86.97263797146942!3d20.47829535142254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e5745f29ef52b%3A0x3317853bd5bac3a6!2sHarley%20Davidson%20Cozumel!5e1!3m2!1sen!2sus!4v1712385431539!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <h3>Store 2</h3>
+        <section class="waterfront">
+            <h3>Scoots Waterfront</h3>
+            <p>Av. Rafael E. Melgar 599, Centro, 77600 Cozumel,<br> Q.R., Mexico</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1859.6652659406882!2d-86.95572454122485!3d20.507456184033217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59c4d55d8b43%3A0x4d000f0d47a757b0!2sPlaza%20Punta%20Langosta!5e1!3m2!1sen!2sus!4v1712385533321!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         <section class="contact-form">
+            <h3>Drop us a Line</h3>
             <form action="thankyou.html">
-                <label></label>
-                <label></label>
+                <label>Name: <input type="text" id="name" for="name" required></label><br>
+                <label>Email: <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="username@domain.com" title="A valid email address." required></label><br>
+                <label>Comment: <textarea name="special" id="special" cols="40" rows="10"></textarea></label><br>
+                <button><input type="submit" value="submit"></button>
             </form>
         </section>
     </main>
@@ -85,6 +86,6 @@
         <p id='locale'>Louisiana</p>
         <p>Last Modified: <span id='lastModified'></span></p>
     </footer>
-    <script src='scripts/hamburger.js'></script>
+    <script src='scripts/menu.js'></script>
 </body>
 </html>

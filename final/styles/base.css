@@ -5,7 +5,7 @@
 }*/
 header {
     background-color: #4CC9F0;
-    background-image: url("/final/images/hero-mobile.webp");
+    background-image: url("final/images/hero-mobile.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 75%;
@@ -13,6 +13,7 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-family: 'Pacifico', cursive;
     color: white;
     height: 400px;
 }
