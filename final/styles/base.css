@@ -1,8 +1,8 @@
 /* colors: https://coolors.co/palette/f72585-7209b7-3a0ca3-4361ee-4cc9f0 */
 
-/*body {
-
-}*/
+body {
+    font-family: "Fira Sans Condensed", sans-serif;
+}
 header {
     background-color: #4CC9F0;
     background-image: url("final/images/hero-mobile.webp");
