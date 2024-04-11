@@ -8,7 +8,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    align-items: center;
 }
 main img {
     width: 90%;
@@ -176,9 +176,9 @@ footer{
 .rentals section {
     padding: 1rem;
 }
-.grid {
+/*.grid {
 
-}
+}*/
 .list {
     display: grid;
     grid-template-columns: 1fr;
