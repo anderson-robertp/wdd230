@@ -6,15 +6,15 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta name='description' content='Here is the course assignment portal for Robert Anderson to display his work for the WDD 230 - Web Frontend Development class.'>
     <meta name='author' content='Robert Anderson'>
-     <!-- Social Meta Expressions -->
-    <meta property='og:title' content='WDD 230 - Web Frontend Development'>
+    <!-- Social Meta Expressions -->
+    <meta property='og:title' content='Scoots Scooter Rental - WDD 230 - Web Frontend Development'>
     <meta property='og:type' content='website'>
-    <meta property='og:image' content='https://heartoflouisiana.com/wp-content/uploads/2021/12/Lake_Bistineau_Cypress_Moss_09_1700x1130-1-1700x660.jpg'>
-    <meta property='og:url' content='https://anderson-robertp.github.io/wdd230/'>
-     <!-- Fonts and styles -->
+    <meta property='og:image' content='https://yourfriendthenomad.com/wp-content/uploads/2023/03/Cozumel-Mexico-2-1024x732.jpg'>
+    <meta property='og:url' content='https://anderson-robertp.github.io/wdd230/final/index.html'>
+    <!-- Fonts and styles -->
     <link rel='preconnect' href='https://fonts.googleapis.com'>
     <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
-    <link href='https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto&display=swap' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap" rel="stylesheet">
     <link rel='stylesheet' href='styles/normalize.css'>
     <link rel='stylesheet' href='styles/base.css'>
     <link rel="stylesheet" href="styles/medium.css">
@@ -48,13 +48,20 @@
             <span class='moon-icon'>&#128526;</span>
         </label>
     </div>
-    <button id='menu'></button>
     <nav class='mobile-navigation'>
-        <a href='index.html'>Home</a>
-        <a href='rentals.html'>Rentals</a>
-        <a href='reservations.html'>Reservations</a>
-        <a href='contact.html'>Contact Us</a>
-        <!--Social Media Links-->
+        <div id="myNav" class="navOverlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="nav-overlay-content">
+                <a href='index.html'>Home</a>
+                <a href='rentals.html'>Rentals</a>
+                <a href='reservations.html'>Reservations</a>
+                <a href='contact.html'>Contact Us</a>
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"></a>
+                <a href="https://www.instgram.com" target="_blank"><img src="images/instagram.png"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.svg"></a>
+            </div>
+        </div>
+        <button id="menu">Menu</button>
     </nav>
     <main>
         <!--Essential contact info
@@ -81,10 +88,25 @@
         </section>
     </main>
     <footer>
-        <p>&#169; <span id='year'>????</span></p>
-        <p id='name'>Robert Anderson</p>
-        <p id='locale'>Louisiana</p>
-        <p>Last Modified: <span id='lastModified'></span></p>
+        <div id="foot">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <div class="contact">
+            <h4>Downtown Location</h4>
+            <p>Km. 3.5 Prolongación Av. Rafael E. Melgar Lote 37<br> Local 62 Int. Centro Comercial Royal Village,<br> 77675 Cozumel, Q.R., Mexico</p>
+            <p>Phone: +523185551234</p>
+            <p>Email: downtown@scoots.com</p>
+        </div>
+        <div class="contact">
+            <h4>Waterfront Location</h4>
+            <p>Av. Rafael E. Melgar 599, Centro, 77600 Cozumel,<br> Q.R., Mexico</p>
+            <p>Phone: +523185556789</p>
+            <p>Email: waterfront@scoots.com</p>
+        </div>
+        <div>
+            <p id="copy">&#169; <span id="year">2024</span> Robert Anderson</p>
+            <p id="disclaimer">Not a real site. Project for class BYUI WDD 230</p>
+        </div>
     </footer>
     <script src='scripts/menu.js'></script>
 </body>
