@@ -2,13 +2,11 @@ const url = "https://anderson-robertp.github.io/wdd230/final/data/vehicles.json"
 
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const tablebutton = document.querySelector("#table");
 const display = document.querySelector("article");
 //const table = document.querySelector('#dataTable tbody')
 
 gridbutton.addEventListener("click", showGrid);
 listbutton.addEventListener("click", showList);
-tablebutton.addEventListener("click", showTable);
 
 getVehicles(url).then(data => {
     parseData(data);
@@ -23,11 +21,11 @@ async function getVehicles(link) {
 }
 
 function parseData(array) {
-    console.table(array);
+    //console.table(array);
     const scooters = array.vehicles.scooters
     const atvs = array.vehicles.atvs
     const jeeps = array.vehicles.jeeps
-    console.table(scooters);
+    //console.table(scooters);
     createCards(scooters);
     createCards(atvs);
     createCards(jeeps);
@@ -35,45 +33,45 @@ function parseData(array) {
 
 function populateTable(array) {
     const table = document.querySelector('#datatable tbody')
-    console.table(array);
+    //console.table(array);
     const scooters = array.vehicles.scooters
     const atvs = array.vehicles.atvs
     const jeeps = array.vehicles.jeeps
-    const rowScoot = document.createElement('tr');
-    rowScoot.innerHTML = `
-        <td>Scooters</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    `;
-    table.appendChild(rowScoot);
+    //const rowScoot = document.createElement('tr');
+    //rowScoot.innerHTML = `
+    //    <td>Scooters</td>
+     //   <td></td>
+    //    <td></td>
+    //    <td></td>
+    //    <td></td>
+    //    <td></td>
+    //    <td></td>
+    //`;
+    //table.appendChild(rowScoot);
     tableRow(scooters,table);
-    const rowATV = document.createElement('tr');
-    rowATV.innerHTML = `
-        <td>ATVs</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    `;
-    table.appendChild(rowATV);
+    //const rowATV = document.createElement('tr');
+    //rowATV.innerHTML = `
+    //    <td>ATVs</td>
+    //    <td></td>
+    //    <td></td>
+    //    <td></td>
+    //    <td></td>
+    //    <td></td>
+    //    <td></td>
+    //`;
+    //table.appendChild(rowATV);
     tableRow(atvs,table);
-    const rowJeep = document.createElement('tr');
-    rowJeep.innerHTML = `
-        <td>Jeeps</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    `;
-    table.appendChild(rowJeep);
+    //const rowJeep = document.createElement('tr');
+    //rowJeep.innerHTML = `
+    //    <td>Jeeps</td>
+    //    <td></td>
+    //    <td></td>
+    //    <td></td>
+    //    <td></td>
+    //    <td></td>
+    //    <td></td>
+    //`;
+    //table.appendChild(rowJeep);
     tableRow(jeeps,table);
     
 }
@@ -85,7 +83,7 @@ function createCards(array) {
         const specs = element.specs;
         const capacity = element.capacity;
         const pic = element.pic;
-        console.log(`${make} `)
+        //console.log(`${make} `)
         // create section
         const section = document.createElement('section');
         // create pic and img element
@@ -123,7 +121,7 @@ function tableRow(array,table){
         const resFull = element.reserve[1].resFull;
         const walkHalf = element.walkin[0].walkHalf;
         const walkFull = element.walkin[1].walkFull;
-        console.log(`${make} ${model} ${resHalf} ${resFull} ${walkHalf} ${walkFull}`)
+        //console.log(`${make} ${model} ${resHalf} ${resFull} ${walkHalf} ${walkFull}`)
         const row = document.createElement('tr');
         row.innerHTML = `
             <td></td>
@@ -147,10 +145,4 @@ function showGrid() {
     display.classList.remove("list");
     display.classList.remove("table");
     display.classList.add("grid");
-}
-
-function showTable() {
-    display.classList.remove("list");
-    display.classList.remove("grid");
-    display.classList.add("table");
 }

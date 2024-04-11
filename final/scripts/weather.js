@@ -50,7 +50,7 @@ function displayCurrentConditions(today,weather){
     const pTemp = document.createElement('p');
     const pHumid = document.createElement('p');
     const pFeels = document.createElement('p');
-    pTemp.innerHTML = `<strong>Temperature<br>${temp}</strong><br>;`
+    pTemp.innerHTML = `<strong>Temperature<br>${temp}</strong><br>`
     pHumid.innerHTML = `Humidity<br>${humid}<br>`
     pFeels.innerHTML = `Feels Like<br>${feels}`
     //console.log(weather)

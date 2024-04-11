@@ -23,29 +23,34 @@
 </head>
 <body>
     <header>
-        <!--Closable banner with the temp-max displayed-->
-        <div class="banner">
-            <div class="banner-content"></div>
-            <button class="banner_close" type="button">❎</button>
-        </div>
         <script src='scripts/darkmode.js'></script>
-        <div class="logo">
-            <div id="head">
-                <a href="index.html"><img src="images/logo.png"></a>
-            </div>   
-            <h1>
-                ~Scoots~<br>Scooter Rental
-            </h1>
+        <div class="m-hero">
+            <picture>
+                <source srcset="images/hero-mobile.webp" media="(max-width: 800px)">
+                <img src="images/hero-large.webp" loading="lazy">
+            </picture>
         </div>
+        <div class="overlay">
+            <div class="logo">
+                <div id="head">
+                    <a href="index.html"><img src="images/logo.png"></a>
+                </div>   
+                <h1>
+                    ~Scoots~<br>Scooter Rental
+                </h1>
+            </div>
+            <div id="header-call">
+                <a href="reservations.html"><button>Rent Your Adventure</button></a>
+            </div>
+        </div>
+        
         <div class="navigation">
         <a href='index.html'>Home</a>
         <a href='rentals.html'>Rentals</a>
         <a href='reservations.html'>Reservations</a>
         <a href='contact.html'>Contact Us</a>
         </div>
-        <div id="header-call">
-            <a href="reservations.html"><button>Rent Your Adventure</button></a>
-        </div>
+        
     </header>
     <div id='mode'>
         <label class='switch'>
@@ -55,13 +60,26 @@
             <span class='moon-icon'>&#128526;</span>
         </label>
     </div>
-    <button id='menu'></button>
+    
+    <!--Closable banner with the temp-max displayed-->
+    <div class="banner">
+        <div class="banner-content"></div>
+        <button class="banner_close" type="button">&times</button>
+    </div>
     <nav class='mobile-navigation'>
-        <a href='index.html'>Home</a>
-        <a href='rentals.html'>Rentals</a>
-        <a href='reservations.html'>Reservations</a>
-        <a href='contact.html'>Contact Us</a>
-        <!--Social Media Links-->
+        <div id="myNav" class="navOverlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="nav-overlay-content">
+                <a href='index.html'>Home</a>
+                <a href='rentals.html'>Rentals</a>
+                <a href='reservations.html'>Reservations</a>
+                <a href='contact.html'>Contact Us</a>
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"></a>
+                <a href="https://www.instgram.com" target="_blank"><img src="images/instagram.png"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.svg"></a>
+            </div>
+        </div>
+        <button id="menu">Menu</button>
     </nav>
     <main>
         <!--Pictures of the island-->
@@ -75,9 +93,6 @@
 
         <!--sUMMERY OF ALL THE RENTALS-->
         <section class="rental-card">
-            <h2>
-                Rental Summery
-            </h2>
             <p>
                 <strong>Explore the great outdoors with our wide range of rental options!</strong><br> Whether you're cruising through the city streets or tackling off-road trails, we've got you covered with our selection of scooters, ATVs, and Jeeps. Enjoy the freedom of mobility and adventure with our reliable and well-maintained vehicles. From solo rides to group excursions, our rentals cater to all your needs. Experience convenience, reliability, and excitement – rent with us today!
             </p>
@@ -109,13 +124,90 @@
             <h2>
                 Frequently asked Questions
             </h2>
+            <ul>
+                <li>
+                    <strong>How old do I need to be to rent a scooter?</strong>
+                </li>
+                <li>
+                    To rent a scooter, you typically need to be at least 18 years old. Some rental companies may require you to be 21 or older, so be sure to check the specific age requirements before booking.
+                </li>
+                <li>
+                    <strong>Do I need a driver's license to rent a scooter?</strong>
+                </li>
+                <li>
+                    Yes, a valid driver's license is usually required to rent a scooter. This ensures that you are legally allowed to operate a motorized vehicle on public roads. International visitors may need an international driving permit in addition to their home country's license.
+                </li>
+                <li>
+                    <strong>Are helmets provided with scooter rentals?</strong>
+                </li>
+                <li>
+                    Yes, helmets are provided with every scooter rental for your safety. It's important to wear a helmet at all times while riding a scooter, as it significantly reduces the risk of head injuries in case of accidents.
+                </li>
+                <li>
+                    <strong>Can I rent a scooter for just a few hours, or do I need to rent it for a full day?</strong>
+                </li>
+                <li>
+                    Rental periods vary depending on the company, but many scooter rental companies offer hourly, daily, and weekly rental options. Whether you need a scooter for a short trip or an extended vacation, you can typically find a rental period that suits your needs.
+                </li>
+                <li>
+                    <strong>Do I need insurance to rent a scooter?</strong>
+                </li>
+                <li>
+                    Most scooter rental companies include basic insurance coverage in the rental fee. However, it's important to carefully review the rental agreement to understand the extent of coverage and any additional insurance options available.
+                </li>
+                <li>
+                    <strong>How do I reserve a scooter rental?</strong>
+                </li>
+                <li>
+                    Reserving a scooter rental is usually quick and easy. You can typically make a reservation online through the company's website or by calling their reservation hotline. Be sure to provide your desired rental dates and any other necessary information.
+                </li>
+                <li>
+                    <strong>Can I ride the scooter outside of designated areas?</strong>
+                </li>
+                <li>
+                    Scooter rental companies often have specific boundaries or zones where you are allowed to ride the scooter. Riding outside of these areas may result in additional fees or penalties. Be sure to familiarize yourself with the rental company's terms and conditions regarding usage areas.
+                </li>
+                <li>
+                    <strong>What happens if the scooter breaks down during my rental period?</strong>
+                </li>
+                <li>
+                    In the event of a mechanical issue or breakdown, contact the rental company's customer service immediately for assistance. Depending on the situation, they may provide roadside assistance, arrange for a replacement scooter, or offer a refund for the remaining rental period.
+                </li>
+                <li>
+                    <strong>Can I return the scooter early if I no longer need it?</strong>
+                </li>
+                <li>
+                    Yes, you can typically return the scooter early if your plans change. However, rental fees are often non-refundable, so you may not receive a refund for the unused portion of your rental period. Contact the rental company in advance to arrange an early return if needed.
+                </li>
+                <li>
+                    <strong>Are there any restrictions on where I can park the scooter?</strong>
+                </li>
+                <li>
+                    Scooter parking regulations vary depending on the city or location. Some areas may have designated scooter parking zones, while others may require you to park in regular motorcycle or car parking spaces. Always follow local parking laws and regulations to avoid fines or penalties.
+                </li>
+            </ul>
         </section>
     </main>
     <footer>
-        <p>&#169; <span id='year'>????</span></p>
-        <p id='name'>Robert Anderson</p>
-        <p id='locale'>Louisiana</p>
-        <p>Last Modified: <span id='lastModified'></span></p>
+        <div id="foot">
+            <a href="index.html"><img src="images/logo.png"></a>
+        </div>
+        <div class="contact">
+            <h4>Downtown Location</h4>
+            <p>Km. 3.5 Prolongación Av. Rafael E. Melgar Lote 37<br> Local 62 Int. Centro Comercial Royal Village,<br> 77675 Cozumel, Q.R., Mexico</p>
+            <p>Phone: +523185551234</p>
+            <p>Email: downtown@scoots.com</p>
+        </div>
+        <div class="contact">
+            <h4>Waterfront Location</h4>
+            <p>Av. Rafael E. Melgar 599, Centro, 77600 Cozumel,<br> Q.R., Mexico</p>
+            <p>Phone: +523185556789</p>
+            <p>Email: waterfront@scoots.com</p>
+        </div>
+        <div>
+            <p id="copy">&#169; <span id="year">2024</span> Robert Anderson</p>
+            <p id="disclaimer">Not a real site. Project for class BYUI WDD 230</p>
+        </div>
     </footer>
     <script src='scripts/menu.js'></script>
     <script src="scripts/weather.js"></script>
