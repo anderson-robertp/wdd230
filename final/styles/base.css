@@ -42,7 +42,7 @@ header {
     align-items: center;
     text-align: center;
     font-family: 'Pacifico', cursive;
-    color: white;
+    color: black;
 }
 .m-hero {
     position: relative;
@@ -153,6 +153,13 @@ footer{
 }
 
 /* Index Only */
+#header-call {
+    background-color: #4CC9F0;
+    color: black;
+    padding: .5rem;
+    border: black;
+    border-radius: 5px;
+}
 .weather-card {
     display: grid;
     grid-template-columns: 1fr 1fr;

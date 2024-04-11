@@ -27,7 +27,7 @@
         <script src='scripts/darkmode.js'></script>
         <div class="logo">
             <div id="head">
-                <a href="index.html"><img src="images/logo.png"></a>
+                <a href="index.html"><img src="images/logo.png" alt="scoots logo"></a>
             </div>   
             <h1>
                 ~Scoots~<br>Scooter Rental
@@ -35,12 +35,12 @@
         </div>
         <div class="navigation">
             <a href='index.html'>Home</a>
-            <a href='rentals.html'>Rentals</a>
-            <a href='reservations.html'>Reservations</a>
-            <a href='contact.html'>Contact Us</a>
-            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"></a>
-            <a href="https://www.instgram.com" target="_blank"><img src="images/instagram.png"></a>
-            <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.svg"></a>
+                <a href='rentals.html'>Rentals</a>
+                <a href='reservations.html'>Reservations</a>
+                <a href='contact.html'>Contact Us</a>
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook logo"></a>
+                <a href="https://www.instgram.com" target="_blank"><img src="images/instagram.png" alt="instagram logo"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.svg" alt="twitter logo"></a>
         </div>
     </header>
     <div id='mode'>
@@ -59,9 +59,9 @@
                 <a href='rentals.html'>Rentals</a>
                 <a href='reservations.html'>Reservations</a>
                 <a href='contact.html'>Contact Us</a>
-                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png"></a>
-                <a href="https://www.instgram.com" target="_blank"><img src="images/instagram.png"></a>
-                <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.svg"></a>
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="facebook logo"></a>
+                <a href="https://www.instgram.com" target="_blank"><img src="images/instagram.png" alt="instagram logo"></a>
+                <a href="https://www.twitter.com" target="_blank"><img src="images/twitter.svg" alt="twitter logo"></a>
             </div>
         </div>
         <button id="menu">Menu</button>
@@ -99,7 +99,7 @@
                     <!--Period-->
                     <label for="edate">When are bringing them back? <input type="date" id="edate" name="edate" required></label><br>
                     <!--Rental Type-->
-                    <label>What do you want to rent? <select id="rental" for="rental">
+                    <label for="rental">What do you want to rent? <select id="rental" name="rental">
                         <option>Honda Metro Scooter</option>
                         <option>Honda Dio Scooter</option>
                         <option>Honda PCX150 Scooter</option>
@@ -108,19 +108,19 @@
                         <option>Jeep Wrangler - 2 door</option>
                     </select></label><br>
                     <!--Quantity-->
-                    <label>How many do you want? <input type="number" id="quantity" for="quantity" required></label><br>
+                    <label for="quantity">How many do you want? <input type="number" id="quantity" name="quantity" required></label><br>
                     <!--name-->
-                    <label for="name">What's your Name? <input type="text" id="name" for="name" required></label><br>
+                    <label for="name">What's your Name? <input type="text" id="name" name="name" required></label><br>
                     <!--Phone-->
                     <label for="mobile">What's your number? <input type="tel" name="mobile" id="mobile" required placeholder="1235556789"></label><br>
                     <!--email-->
                     <label for="email">What's your email? <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="username@domain.com" title="A valid email address." required></label><br>
                     <!--home state or country-->
-                    <label>Where are you from? <input for="country" type="text" id="country"></label><br>
+                    <label for="country">Where are you from? <input name="country" type="text" id="country"></label><br>
                     <!--Cruise line-->
-                    <label>Which Cruise are you a part of? <input type="text" id="cruise" for="cruise"></label><br>
+                    <label for="cruise">Which Cruise are you a part of? <input type="text" id="cruise" name="cruise"></label><br>
                     <!--Comment form-->
-                    <label>Any special requirements? <textarea name="special" id="special" cols="40" rows="10"></textarea></label><br>
+                    <label for="special">Any special requirements? <textarea name="special" id="special" cols="40" rows="10"></textarea></label><br>
                     <input type="submit" value="Submit">
                 </form>
             </div>
@@ -128,7 +128,7 @@
     </main>
     <footer>
         <div id="foot">
-            <a href="index.html"><img src="images/logo.png"></a>
+            <a href="index.html"><img src="images/logo.png" alt="scoots logo"></a>
         </div>
         <div class="contact">
             <h4>Downtown Location</h4>
